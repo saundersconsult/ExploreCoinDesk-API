@@ -1,0 +1,519 @@
+{
+  "metadata": {
+    "base_url": "https://min-api.cryptocompare.com",
+    "total_endpoints": 52,
+    "categories": 12,
+    "discovery_method": "Manual mapping from GitHub issue #12 documentation URLs (https://github.com/saundersconsult/ExploreCoinDesk-API/issues/12)",
+    "note": "Pages are JavaScript-rendered, so automated extraction not feasible. This mapping is based on documented page URL structure and known CryptoCompare MinAPI patterns. All endpoints require testing against live API.",
+    "api_documentation_base": "https://developers.coindesk.com/documentation/legacy"
+  },
+  "Price": [
+    {
+      "name": "Single Symbol Price",
+      "endpoint": "/data/price",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Price/SingleSymbolPriceEndpoint/",
+      "parameters": ["fsym", "tsyms", "tryConversion", "e", "extraParams", "sign", "relaxedValidation"],
+      "description": "Get current price of any cryptocurrency in any other currency",
+      "tested": null
+    },
+    {
+      "name": "Multiple Symbols Price",
+      "endpoint": "/data/pricemulti",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Price/multipleSymbolsPriceEndpoint",
+      "parameters": ["fsyms", "tsyms", "e"],
+      "description": "Get prices for multiple cryptocurrencies at once",
+      "tested": null
+    },
+    {
+      "name": "Multiple Symbols Full Price",
+      "endpoint": "/data/pricemultifull",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Price/multipleSymbolsFullPriceEndpoint",
+      "parameters": ["fsyms", "tsyms", "e", "tryConversion"],
+      "description": "Detailed price info including market data (high, low, volume, etc.)",
+      "tested": null
+    },
+    {
+      "name": "Generate Average",
+      "endpoint": "/data/generateAvg",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Price/generateAverageEndpoint",
+      "parameters": ["fsym", "tsym", "e", "extraParams", "sign"],
+      "description": "Get weighted average price across exchanges",
+      "tested": null
+    }
+  ],
+  "Historical": [
+    {
+      "name": "Daily Historical OHLCV",
+      "endpoint": "/data/histoday",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Historical/dataHistoday",
+      "parameters": ["fsym", "tsym", "limit", "aggregate", "toTs", "e"],
+      "description": "Get daily historical OHLCV data",
+      "tested": null
+    },
+    {
+      "name": "Hourly Historical OHLCV",
+      "endpoint": "/data/histohour",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Historical/dataHistohour",
+      "parameters": ["fsym", "tsym", "limit", "aggregate", "toTs", "e"],
+      "description": "Get hourly historical OHLCV data",
+      "tested": null
+    },
+    {
+      "name": "Minute Historical OHLCV",
+      "endpoint": "/data/histominute",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Historical/dataHistominute",
+      "parameters": ["fsym", "tsym", "limit", "aggregate", "toTs", "e"],
+      "description": "Get minute-level historical OHLCV data",
+      "tested": null
+    },
+    {
+      "name": "Daily Market Close",
+      "endpoint": "/data/dayAvg",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Historical/dailyMarketClose",
+      "parameters": ["fsym", "tsym", "toTs", "e"],
+      "description": "Get daily average price at market close",
+      "tested": null
+    },
+    {
+      "name": "Daily Historical Minute",
+      "endpoint": "/data/dayavg",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Historical/DailyHistoMinute",
+      "parameters": ["fsym", "tsym", "toTs"],
+      "description": "Daily historical minute data aggregation",
+      "tested": null
+    },
+    {
+      "name": "Price at Specific Time",
+      "endpoint": "/data/pricehistorical",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Historical/dataPriceHistorical",
+      "parameters": ["fsym", "tsyms", "ts", "e"],
+      "description": "Get historical price at a specific timestamp",
+      "tested": null
+    }
+  ],
+  "Blockchain": [
+    {
+      "name": "List of Blockchain Coins",
+      "endpoint": "/data/blockchain/list",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Blockchain/blockchainListOfCoins",
+      "parameters": [],
+      "description": "List all cryptocurrencies with blockchain data available",
+      "tested": null
+    },
+    {
+      "name": "Latest Blockchain Data",
+      "endpoint": "/data/blockchain/latest",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Blockchain/blockchainLatest",
+      "parameters": ["fsym"],
+      "description": "Get latest blockchain statistics for a coin",
+      "tested": null
+    },
+    {
+      "name": "Daily Blockchain Historical Data",
+      "endpoint": "/data/blockchain/histo/day",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Blockchain/blockchainDay",
+      "parameters": ["fsym", "limit", "toTs"],
+      "description": "Historical daily blockchain data",
+      "tested": null
+    },
+    {
+      "name": "Balance Distribution Latest",
+      "endpoint": "/data/blockchain/distribution/latest",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Blockchain/balanceDistributionLatest",
+      "parameters": ["fsym"],
+      "description": "Latest wallet balance distribution data",
+      "tested": null
+    },
+    {
+      "name": "Balance Distribution Daily",
+      "endpoint": "/data/blockchain/distribution/day",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Blockchain/balanceDistributionDay",
+      "parameters": ["fsym", "limit"],
+      "description": "Historical daily balance distribution data",
+      "tested": null
+    },
+    {
+      "name": "Staking Rate Latest",
+      "endpoint": "/data/blockchain/staking/latest",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Blockchain/dataStakingRateLatest",
+      "parameters": ["fsym"],
+      "description": "Latest staking rate data for coins",
+      "tested": null
+    }
+  ],
+  "TradingSignals": [
+    {
+      "name": "IntoTheBlock Trading Signals Latest",
+      "endpoint": "/data/tradingsignals/intotheblock/latest",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/TradingSignals/tradingSignalsIntoTheBlockLatest",
+      "parameters": ["fsym"],
+      "description": "Latest IntoTheBlock trading signals",
+      "tested": null
+    }
+  ],
+  "PairMapping": [
+    {
+      "name": "Pair Mapping by From Symbol",
+      "endpoint": "/data/pair/mapping/fsym",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/PairMapping/pairMappingMappedSymbolEndpoint",
+      "parameters": ["fsym"],
+      "description": "Get all trading pairs for a from symbol",
+      "tested": null
+    },
+    {
+      "name": "Pair Mapping by Exchange",
+      "endpoint": "/data/pair/mapping/exchange",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/PairMapping/pairMappingExchangeEndpoint",
+      "parameters": ["e"],
+      "description": "Get all trading pairs available on an exchange",
+      "tested": null
+    },
+    {
+      "name": "Pair Mapping by Symbol and Exchange",
+      "endpoint": "/data/pair/mapping/fsym/exchange",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/PairMapping/pairMappingExchangeSymbolEndpoint",
+      "parameters": ["fsym", "e"],
+      "description": "Get trading pairs for a symbol on a specific exchange",
+      "tested": null
+    },
+    {
+      "name": "Planned Pair Remapping",
+      "endpoint": "/data/pair/remapping/planned",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/PairMapping/plannedPairRemappingEndpoint",
+      "parameters": [],
+      "description": "Get planned pair remapping updates",
+      "tested": null
+    }
+  ],
+  "Toplists": [
+    {
+      "name": "Top by Total Volume Full Data",
+      "endpoint": "/data/top/totalvolumefull",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Toplists/TopTotalVolumeEndpointFull",
+      "parameters": ["tsym", "limit", "page"],
+      "description": "Get top cryptocurrencies by total trading volume with full data",
+      "tested": null
+    },
+    {
+      "name": "Top by Total Top Tier Volume Full",
+      "endpoint": "/data/top/totalvolume/tier",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Toplists/topTotalTopTierVolumeEndpointFull",
+      "parameters": ["tsym", "limit", "page"],
+      "description": "Top cryptos by volume on top-tier exchanges only",
+      "tested": null
+    },
+    {
+      "name": "Top by Market Cap Full Data",
+      "endpoint": "/data/top/mktcapfull",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Toplists/TopTotalMktCapEndpointFull",
+      "parameters": ["tsym", "limit", "page"],
+      "description": "Get top cryptocurrencies by market cap with full data",
+      "tested": null
+    },
+    {
+      "name": "Top Exchanges by Pair",
+      "endpoint": "/data/top/exchanges",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Toplists/topExchangesEndpoint",
+      "parameters": ["fsym", "tsym", "limit"],
+      "description": "Top exchanges for a specific trading pair",
+      "tested": null
+    },
+    {
+      "name": "Top Exchanges Full Data",
+      "endpoint": "/data/top/exchanges/full",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Toplists/topExchangesFullEndpoint",
+      "parameters": ["fsym", "tsym", "limit"],
+      "description": "Top exchanges with full data for a trading pair",
+      "tested": null
+    }
+  ],
+  "Social": [
+    {
+      "name": "Latest Coin Social Stats",
+      "endpoint": "/data/social/coin/latest",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Social/latestCoinSocialStats",
+      "parameters": ["coinId"],
+      "description": "Get latest social media statistics for a coin",
+      "tested": null
+    },
+    {
+      "name": "Historical Daily Social Stats",
+      "endpoint": "/data/social/coin/histo/day",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Social/historicalDaySocialStats",
+      "parameters": ["coinId", "limit"],
+      "description": "Historical daily social media statistics",
+      "tested": null
+    },
+    {
+      "name": "Historical Hourly Social Stats",
+      "endpoint": "/data/social/coin/histo/hour",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Social/historicalHourSocialStats",
+      "parameters": ["coinId", "limit"],
+      "description": "Historical hourly social media statistics",
+      "tested": null
+    }
+  ],
+  "News": [
+    {
+      "name": "Latest News Articles",
+      "endpoint": "/data/v2/news",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/News/latestNewsArticlesEndpoint",
+      "parameters": ["lang", "sortOrder", "limit"],
+      "description": "Get latest cryptocurrency news articles",
+      "tested": null
+    },
+    {
+      "name": "List News Feeds",
+      "endpoint": "/data/news/feeds",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/News/ListNewsFeedsEndpoint",
+      "parameters": [],
+      "description": "List available news feed sources",
+      "tested": null
+    },
+    {
+      "name": "News Article Categories",
+      "endpoint": "/data/news/categories",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/News/newsArticleCategoriesEndpoint",
+      "parameters": [],
+      "description": "List available news article categories",
+      "tested": null
+    },
+    {
+      "name": "News Feeds and Categories",
+      "endpoint": "/data/news/feedsandcategories",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/News/newsFeedAndCategoriesEndpoint",
+      "parameters": [],
+      "description": "Get combined feeds and categories list",
+      "tested": null
+    }
+  ],
+  "OrderBook": [
+    {
+      "name": "Exchanges with Order Book Data",
+      "endpoint": "/data/ob/exchanges",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Orderbook/exchangesWithOrdebookStaticInfoEndpointV2",
+      "parameters": [],
+      "description": "List exchanges that have order book data available",
+      "tested": null
+    },
+    {
+      "name": "Order Book Level 1 Top",
+      "endpoint": "/data/ob/l1/top",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Orderbook/obL1TopEndpoint",
+      "parameters": ["e", "fsym", "tsym"],
+      "description": "Order book level 1 (top of book) data",
+      "tested": null
+    },
+    {
+      "name": "Order Book Level 2 Snapshot",
+      "endpoint": "/data/ob/l2/snapshot",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Orderbook/obL2SnapshotEndpoint",
+      "parameters": ["e", "fsym", "tsym"],
+      "description": "Order book level 2 snapshot data",
+      "tested": null
+    }
+  ],
+  "GeneralInfo": [
+    {
+      "name": "All Exchanges",
+      "endpoint": "/data/all/exchanges",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Other/allExchangesV4Endpoint",
+      "parameters": [],
+      "description": "List all available exchanges",
+      "tested": null
+    },
+    {
+      "name": "All Included Exchanges",
+      "endpoint": "/data/all/coinlist",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Other/allIncludedExchangesEndpoint",
+      "parameters": [],
+      "description": "List all coins and exchanges included in the API",
+      "tested": null
+    },
+    {
+      "name": "CCCAGG Pairs and Exchanges",
+      "endpoint": "/data/cccagg/pairs",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Other/cccaggPairsAndExchangesV2Endpoint",
+      "parameters": [],
+      "description": "CCCAGG aggregated pairs and exchanges",
+      "tested": null
+    },
+    {
+      "name": "CCCAGG Pairs Excluded",
+      "endpoint": "/data/cccagg/pairs/excluded",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Other/cccaggPairsAndExchangesExcludedEndpoint",
+      "parameters": [],
+      "description": "Pairs excluded from CCCAGG aggregation",
+      "tested": null
+    },
+    {
+      "name": "CCCAGG Pairs Absent",
+      "endpoint": "/data/cccagg/pairs/absent",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Other/cccaggPairsAndExchangesAbsentEndpoint",
+      "parameters": [],
+      "description": "Pairs absent from CCCAGG",
+      "tested": null
+    }
+  ],
+  "Helper": [
+    {
+      "name": "Top Total Volume",
+      "endpoint": "/data/top/volumes",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Streaming/TopTotalVolumeEndpoint",
+      "parameters": ["tsym"],
+      "description": "Helper endpoint for top total volumes",
+      "tested": null
+    },
+    {
+      "name": "Top Total Top Tier Volume",
+      "endpoint": "/data/top/volume/tier",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Streaming/topTotalTopTierVolumeEndpoint",
+      "parameters": ["tsym"],
+      "description": "Helper endpoint for top tier volumes",
+      "tested": null
+    },
+    {
+      "name": "Top Market Cap",
+      "endpoint": "/data/top/mktcap",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Streaming/TopTotalMktCapEndpoint",
+      "parameters": ["tsym"],
+      "description": "Helper endpoint for top market caps",
+      "tested": null
+    },
+    {
+      "name": "Top Direct Volume",
+      "endpoint": "/data/top/volume/direct",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Streaming/TopDirectVolEndpoint",
+      "parameters": ["tsym"],
+      "description": "Helper endpoint for direct volumes",
+      "tested": null
+    },
+    {
+      "name": "Top Price",
+      "endpoint": "/data/top/price",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Streaming/TopPriceEndpoint",
+      "parameters": ["tsym"],
+      "description": "Helper endpoint for top prices",
+      "tested": null
+    }
+  ],
+  "Index": [
+    {
+      "name": "List of Indices",
+      "endpoint": "/data/index/list",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Index/listOfIndices",
+      "parameters": [],
+      "description": "List of available crypto indices",
+      "tested": null
+    },
+    {
+      "name": "MVIS Index Value",
+      "endpoint": "/data/index/value",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Index/mvisIndexValue",
+      "parameters": ["index_id", "tsym"],
+      "description": "Get MVIS crypto index value",
+      "tested": null
+    },
+    {
+      "name": "MVIS Historical Minute Data",
+      "endpoint": "/data/index/histo/minute",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Index/mvisHistoMinute",
+      "parameters": ["index_id", "limit"],
+      "description": "MVIS index minute-level historical data",
+      "tested": null
+    },
+    {
+      "name": "MVIS Historical Hour Data",
+      "endpoint": "/data/index/histo/hour",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Index/mvisHistoHour",
+      "parameters": ["index_id", "limit"],
+      "description": "MVIS index hourly historical data",
+      "tested": null
+    },
+    {
+      "name": "MVIS Historical Day Data",
+      "endpoint": "/data/index/histo/day",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Index/mvisHistoDay",
+      "parameters": ["index_id", "limit"],
+      "description": "MVIS index daily historical data",
+      "tested": null
+    },
+    {
+      "name": "List of Underlying Indices",
+      "endpoint": "/data/index/underlying/list",
+      "method": "GET",
+      "doc_url": "https://developers.coindesk.com/documentation/legacy/Index/listOfUnderlyingIndices",
+      "parameters": [],
+      "description": "List underlying indices that make up composite indices",
+      "tested": null
+    }
+  ],
+  "summary": {
+    "total_endpoints": 52,
+    "by_category": {
+      "Price": 4,
+      "Historical": 6,
+      "Blockchain": 6,
+      "TradingSignals": 1,
+      "PairMapping": 4,
+      "Toplists": 5,
+      "Social": 3,
+      "News": 4,
+      "OrderBook": 3,
+      "GeneralInfo": 5,
+      "Helper": 5,
+      "Index": 6
+    }
+  }
+}

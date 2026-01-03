@@ -1,0 +1,338 @@
+{
+  "Price": [
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Price/SingleSymbolPriceEndpoint/",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Price/multipleSymbolsPriceEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Price/multipleSymbolsFullPriceEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Price/generateAverageEndpoint",
+      "status": "[FAIL] Not found"
+    }
+  ],
+  "Historical": [
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Historical/dataHistoday",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Historical/dataHistohour",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Historical/dataHistominute",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Historical/dailyMarketClose",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Historical/DailyHistoMinute",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Historical/dataPriceHistorical",
+      "status": "[FAIL] Not found"
+    }
+  ],
+  "Blockchain": [
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Blockchain/blockchainListOfCoins",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Blockchain/blockchainLatest",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Blockchain/blockchainDay",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Blockchain/balanceDistributionLatest",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Blockchain/balanceDistributionDay",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Blockchain/dataStakingRateLatest",
+      "status": "[FAIL] Not found"
+    }
+  ],
+  "TradingSignals": [
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/TradingSignals/tradingSignalsIntoTheBlockLatest",
+      "status": "[FAIL] Not found"
+    }
+  ],
+  "PairMapping": [
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/PairMapping/pairMappingMappedSymbolEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/PairMapping/pairMappingExchangeEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/PairMapping/pairMappingExchangeSymbolEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/PairMapping/plannedPairRemappingEndpoint",
+      "status": "[FAIL] Not found"
+    }
+  ],
+  "Toplists": [
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Toplists/TopTotalVolumeEndpointFull",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Toplists/topTotalTopTierVolumeEndpointFull",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Toplists/TopTotalMktCapEndpointFull",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Toplists/topExchangesEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Toplists/topExchangesFullEndpoint",
+      "status": "[FAIL] Not found"
+    }
+  ],
+  "Social": [
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Social/latestCoinSocialStats",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Social/historicalDaySocialStats",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Social/historicalHourSocialStats",
+      "status": "[FAIL] Not found"
+    }
+  ],
+  "News": [
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/News/latestNewsArticlesEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/News/ListNewsFeedsEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/News/newsArticleCategoriesEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/News/newsFeedAndCategoriesEndpoint",
+      "status": "[FAIL] Not found"
+    }
+  ],
+  "OrderBook": [
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Orderbook/exchangesWithOrdebookStaticInfoEndpointV2",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Orderbook/obL1TopEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Orderbook/obL2SnapshotEndpoint",
+      "status": "[FAIL] Not found"
+    }
+  ],
+  "GeneralInfo": [
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Other/allExchangesV4Endpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Other/allIncludedExchangesEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Other/cccaggPairsAndExchangesV2Endpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Other/cccaggPairsAndExchangesExcludedEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Other/cccaggPairsAndExchangesAbsentEndpoint",
+      "status": "[FAIL] Not found"
+    }
+  ],
+  "Helper": [
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Streaming/TopTotalVolumeEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Streaming/topTotalTopTierVolumeEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Streaming/TopTotalMktCapEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Streaming/TopDirectVolEndpoint",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Streaming/TopPriceEndpoint",
+      "status": "[FAIL] Not found"
+    }
+  ],
+  "Index": [
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Index/listOfIndices",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Index/mvisIndexValue",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Index/mvisHistoMinute",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Index/mvisHistoHour",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Index/mvisHistoDay",
+      "status": "[FAIL] Not found"
+    },
+    {
+      "endpoint": null,
+      "title": "<!DOCTYPE html>",
+      "url": "https://developers.coindesk.com/documentation/legacy/Index/listOfUnderlyingIndices",
+      "status": "[FAIL] Not found"
+    }
+  ]
+}

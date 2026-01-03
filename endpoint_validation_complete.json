@@ -1,0 +1,1875 @@
+{
+  "test_metadata": {
+    "base_url": "https://min-api.cryptocompare.com",
+    "timestamp": "2026-01-02T19:16:54.512154",
+    "total_endpoints": 52,
+    "successful": 52,
+    "failed": 0,
+    "percentage_success": 100.0,
+    "elapsed_seconds": 96.1460120677948
+  },
+  "results_by_category": {
+    "Price": {
+      "success": 4,
+      "failed": 0,
+      "endpoints": [
+        {
+          "endpoint": "/data/price",
+          "name": "Single Symbol Price",
+          "category": "Price",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD&e=CCCAGG",
+          "success": true,
+          "response_size": 16,
+          "timestamp": "2026-01-02T19:15:19.317822",
+          "response_keys": [
+            "USD"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/pricemulti",
+          "name": "Multiple Symbols Price",
+          "category": "Price",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/pricemulti?tsyms=USD&fsyms=BTC,ETH&e=CCCAGG",
+          "success": true,
+          "response_size": 46,
+          "timestamp": "2026-01-02T19:15:21.068303",
+          "response_keys": [
+            "BTC",
+            "ETH"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/pricemultifull",
+          "name": "Multiple Symbols Full Price",
+          "category": "Price",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/pricemultifull?tsyms=USD&fsyms=BTC,ETH&e=CCCAGG",
+          "success": true,
+          "response_size": 5310,
+          "timestamp": "2026-01-02T19:15:22.781161",
+          "response_keys": [
+            "RAW",
+            "DISPLAY"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/generateAvg",
+          "name": "Generate Average",
+          "category": "Price",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/generateAvg?fsym=BTC&tsym=USD&e=CCCAGG",
+          "success": true,
+          "response_size": 1135,
+          "timestamp": "2026-01-02T19:15:24.514810",
+          "response_keys": [
+            "RAW",
+            "DISPLAY"
+          ],
+          "response_type": "dict"
+        }
+      ]
+    },
+    "Historical": {
+      "success": 6,
+      "failed": 0,
+      "endpoints": [
+        {
+          "endpoint": "/data/histoday",
+          "name": "Daily Historical OHLCV",
+          "category": "Historical",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/histoday?fsym=BTC&tsym=USD&limit=10&e=CCCAGG",
+          "success": true,
+          "response_size": 2176,
+          "timestamp": "2026-01-02T19:15:26.357017",
+          "response_keys": [
+            "Response",
+            "Type",
+            "Aggregated",
+            "TimeTo",
+            "TimeFrom"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/histohour",
+          "name": "Hourly Historical OHLCV",
+          "category": "Historical",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/histohour?fsym=BTC&tsym=USD&limit=10&e=CCCAGG",
+          "success": true,
+          "response_size": 2139,
+          "timestamp": "2026-01-02T19:15:28.071220",
+          "response_keys": [
+            "Response",
+            "Type",
+            "Aggregated",
+            "TimeTo",
+            "TimeFrom"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/histominute",
+          "name": "Minute Historical OHLCV",
+          "category": "Historical",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/histominute?fsym=BTC&tsym=USD&limit=10&e=CCCAGG",
+          "success": true,
+          "response_size": 2095,
+          "timestamp": "2026-01-02T19:15:29.786063",
+          "response_keys": [
+            "Response",
+            "Type",
+            "Aggregated",
+            "TimeTo",
+            "TimeFrom"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/dayAvg",
+          "name": "Daily Market Close",
+          "category": "Historical",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/dayAvg?fsym=BTC&tsym=USD&e=CCCAGG",
+          "success": true,
+          "response_size": 73,
+          "timestamp": "2026-01-02T19:15:31.534844",
+          "response_keys": [
+            "USD",
+            "ConversionType"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/dayavg",
+          "name": "Daily Historical Minute",
+          "category": "Historical",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/dayavg?fsym=BTC&tsym=USD",
+          "success": true,
+          "response_size": 71,
+          "timestamp": "2026-01-02T19:15:33.259106",
+          "response_keys": [
+            "Response",
+            "Message",
+            "Type",
+            "Data"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/pricehistorical",
+          "name": "Price at Specific Time",
+          "category": "Historical",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/pricehistorical?fsym=BTC&tsyms=USD&e=CCCAGG",
+          "success": true,
+          "response_size": 24,
+          "timestamp": "2026-01-02T19:15:34.980259",
+          "response_keys": [
+            "BTC"
+          ],
+          "response_type": "dict"
+        }
+      ]
+    },
+    "Blockchain": {
+      "success": 6,
+      "failed": 0,
+      "endpoints": [
+        {
+          "endpoint": "/data/blockchain/list",
+          "name": "List of Blockchain Coins",
+          "category": "Blockchain",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/blockchain/list",
+          "success": true,
+          "response_size": 146,
+          "timestamp": "2026-01-02T19:15:36.717804",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/blockchain/latest",
+          "name": "Latest Blockchain Data",
+          "category": "Blockchain",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/blockchain/latest?fsym=BTC",
+          "success": true,
+          "response_size": 146,
+          "timestamp": "2026-01-02T19:15:38.428108",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/blockchain/histo/day",
+          "name": "Daily Blockchain Historical Data",
+          "category": "Blockchain",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/blockchain/histo/day?fsym=BTC&limit=10",
+          "success": true,
+          "response_size": 146,
+          "timestamp": "2026-01-02T19:15:40.175479",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/blockchain/distribution/latest",
+          "name": "Balance Distribution Latest",
+          "category": "Blockchain",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/blockchain/distribution/latest?fsym=BTC",
+          "success": true,
+          "response_size": 71,
+          "timestamp": "2026-01-02T19:15:41.901727",
+          "response_keys": [
+            "Response",
+            "Message",
+            "Type",
+            "Data"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/blockchain/distribution/day",
+          "name": "Balance Distribution Daily",
+          "category": "Blockchain",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/blockchain/distribution/day?fsym=BTC&limit=10",
+          "success": true,
+          "response_size": 71,
+          "timestamp": "2026-01-02T19:15:43.627454",
+          "response_keys": [
+            "Response",
+            "Message",
+            "Type",
+            "Data"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/blockchain/staking/latest",
+          "name": "Staking Rate Latest",
+          "category": "Blockchain",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/blockchain/staking/latest?fsym=BTC",
+          "success": true,
+          "response_size": 146,
+          "timestamp": "2026-01-02T19:15:45.365095",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        }
+      ]
+    },
+    "TradingSignals": {
+      "success": 1,
+      "failed": 0,
+      "endpoints": [
+        {
+          "endpoint": "/data/tradingsignals/intotheblock/latest",
+          "name": "IntoTheBlock Trading Signals Latest",
+          "category": "TradingSignals",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/tradingsignals/intotheblock/latest?fsym=BTC",
+          "success": true,
+          "response_size": 842,
+          "timestamp": "2026-01-02T19:15:47.072112",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        }
+      ]
+    },
+    "PairMapping": {
+      "success": 4,
+      "failed": 0,
+      "endpoints": [
+        {
+          "endpoint": "/data/pair/mapping/fsym",
+          "name": "Pair Mapping by From Symbol",
+          "category": "PairMapping",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/pair/mapping/fsym?fsym=BTC",
+          "success": true,
+          "response_size": 146,
+          "timestamp": "2026-01-02T19:15:48.804439",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/pair/mapping/exchange",
+          "name": "Pair Mapping by Exchange",
+          "category": "PairMapping",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/pair/mapping/exchange?e=CCCAGG",
+          "success": true,
+          "response_size": 158,
+          "timestamp": "2026-01-02T19:15:50.538138",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/pair/mapping/fsym/exchange",
+          "name": "Pair Mapping by Symbol and Exchange",
+          "category": "PairMapping",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/pair/mapping/fsym/exchange?fsym=BTC&e=CCCAGG",
+          "success": true,
+          "response_size": 71,
+          "timestamp": "2026-01-02T19:15:52.251778",
+          "response_keys": [
+            "Response",
+            "Message",
+            "Type",
+            "Data"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/pair/remapping/planned",
+          "name": "Planned Pair Remapping",
+          "category": "PairMapping",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/pair/remapping/planned",
+          "success": true,
+          "response_size": 71,
+          "timestamp": "2026-01-02T19:15:53.958024",
+          "response_keys": [
+            "Response",
+            "Message",
+            "Type",
+            "Data"
+          ],
+          "response_type": "dict"
+        }
+      ]
+    },
+    "Toplists": {
+      "success": 5,
+      "failed": 0,
+      "endpoints": [
+        {
+          "endpoint": "/data/top/totalvolumefull",
+          "name": "Top by Total Volume Full Data",
+          "category": "Toplists",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/top/totalvolumefull?tsym=USD&limit=10",
+          "success": true,
+          "response_size": 71,
+          "timestamp": "2026-01-02T19:15:55.675454",
+          "response_keys": [
+            "Response",
+            "Message",
+            "Type",
+            "Data"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/top/totalvolume/tier",
+          "name": "Top by Total Top Tier Volume Full",
+          "category": "Toplists",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/top/totalvolume/tier?tsym=USD&limit=10",
+          "success": true,
+          "response_size": 71,
+          "timestamp": "2026-01-02T19:15:58.421799",
+          "response_keys": [
+            "Response",
+            "Message",
+            "Type",
+            "Data"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/top/mktcapfull",
+          "name": "Top by Market Cap Full Data",
+          "category": "Toplists",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/top/mktcapfull?tsym=USD&limit=10",
+          "success": true,
+          "response_size": 31061,
+          "timestamp": "2026-01-02T19:16:00.172898",
+          "response_keys": [
+            "Message",
+            "Type",
+            "MetaData",
+            "SponsoredData",
+            "Data"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/top/exchanges",
+          "name": "Top Exchanges by Pair",
+          "category": "Toplists",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/top/exchanges?fsym=BTC&tsym=USD&limit=10",
+          "success": true,
+          "response_size": 2113,
+          "timestamp": "2026-01-02T19:16:01.945253",
+          "response_keys": [
+            "Response",
+            "Data",
+            "RateLimit",
+            "HasWarning",
+            "Type"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/top/exchanges/full",
+          "name": "Top Exchanges Full Data",
+          "category": "Toplists",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/top/exchanges/full?fsym=BTC&tsym=USD&limit=10",
+          "success": true,
+          "response_size": 9248,
+          "timestamp": "2026-01-02T19:16:03.685234",
+          "response_keys": [
+            "Response",
+            "Message",
+            "Data",
+            "RateLimit",
+            "HasWarning"
+          ],
+          "response_type": "dict"
+        }
+      ]
+    },
+    "Social": {
+      "success": 3,
+      "failed": 0,
+      "endpoints": [
+        {
+          "endpoint": "/data/social/coin/latest",
+          "name": "Latest Coin Social Stats",
+          "category": "Social",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/social/coin/latest?coinId=1",
+          "success": true,
+          "response_size": 146,
+          "timestamp": "2026-01-02T19:16:05.423584",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/social/coin/histo/day",
+          "name": "Historical Daily Social Stats",
+          "category": "Social",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/social/coin/histo/day?limit=10&coinId=1",
+          "success": true,
+          "response_size": 146,
+          "timestamp": "2026-01-02T19:16:07.141461",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/social/coin/histo/hour",
+          "name": "Historical Hourly Social Stats",
+          "category": "Social",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/social/coin/histo/hour?limit=10&coinId=1",
+          "success": true,
+          "response_size": 146,
+          "timestamp": "2026-01-02T19:16:09.528621",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        }
+      ]
+    },
+    "News": {
+      "success": 4,
+      "failed": 0,
+      "endpoints": [
+        {
+          "endpoint": "/data/v2/news",
+          "name": "Latest News Articles",
+          "category": "News",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/v2/news?limit=10",
+          "success": true,
+          "response_size": 71,
+          "timestamp": "2026-01-02T19:16:11.263270",
+          "response_keys": [
+            "Response",
+            "Message",
+            "Type",
+            "Data"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/news/feeds",
+          "name": "List News Feeds",
+          "category": "News",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/news/feeds",
+          "success": true,
+          "response_size": 13087,
+          "timestamp": "2026-01-02T19:16:13.350899",
+          "response_type": "list",
+          "list_length": 106
+        },
+        {
+          "endpoint": "/data/news/categories",
+          "name": "News Article Categories",
+          "category": "News",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/news/categories",
+          "success": true,
+          "response_size": 24611,
+          "timestamp": "2026-01-02T19:16:15.111406",
+          "response_type": "list",
+          "list_length": 187
+        },
+        {
+          "endpoint": "/data/news/feedsandcategories",
+          "name": "News Feeds and Categories",
+          "category": "News",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/news/feedsandcategories",
+          "success": true,
+          "response_size": 37810,
+          "timestamp": "2026-01-02T19:16:16.861195",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        }
+      ]
+    },
+    "OrderBook": {
+      "success": 3,
+      "failed": 0,
+      "endpoints": [
+        {
+          "endpoint": "/data/ob/exchanges",
+          "name": "Exchanges with Order Book Data",
+          "category": "OrderBook",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/ob/exchanges",
+          "success": true,
+          "response_size": 146,
+          "timestamp": "2026-01-02T19:16:18.580523",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/ob/l1/top",
+          "name": "Order Book Level 1 Top",
+          "category": "OrderBook",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/ob/l1/top?fsym=BTC&tsym=USD&e=CCCAGG",
+          "success": true,
+          "response_size": 146,
+          "timestamp": "2026-01-02T19:16:20.302838",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/ob/l2/snapshot",
+          "name": "Order Book Level 2 Snapshot",
+          "category": "OrderBook",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/ob/l2/snapshot?fsym=BTC&tsym=USD&e=CCCAGG",
+          "success": true,
+          "response_size": 146,
+          "timestamp": "2026-01-02T19:16:22.719268",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        }
+      ]
+    },
+    "GeneralInfo": {
+      "success": 5,
+      "failed": 0,
+      "endpoints": [
+        {
+          "endpoint": "/data/all/exchanges",
+          "name": "All Exchanges",
+          "category": "GeneralInfo",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/all/exchanges",
+          "success": true,
+          "response_size": 505857,
+          "timestamp": "2026-01-02T19:16:24.949957",
+          "response_keys": [
+            "aax",
+            "ABCC",
+            "ACX",
+            "AidosMarket",
+            "alphaex"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/all/coinlist",
+          "name": "All Included Exchanges",
+          "category": "GeneralInfo",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/all/coinlist",
+          "success": true,
+          "response_size": 15118910,
+          "timestamp": "2026-01-02T19:16:28.026970",
+          "response_keys": [
+            "Response",
+            "Message",
+            "Data",
+            "RateLimit",
+            "HasWarning"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/cccagg/pairs",
+          "name": "CCCAGG Pairs and Exchanges",
+          "category": "GeneralInfo",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/cccagg/pairs",
+          "success": true,
+          "response_size": 498531,
+          "timestamp": "2026-01-02T19:16:30.224453",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/cccagg/pairs/excluded",
+          "name": "CCCAGG Pairs Excluded",
+          "category": "GeneralInfo",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/cccagg/pairs/excluded",
+          "success": true,
+          "response_size": 1091913,
+          "timestamp": "2026-01-02T19:16:32.466158",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/cccagg/pairs/absent",
+          "name": "CCCAGG Pairs Absent",
+          "category": "GeneralInfo",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/cccagg/pairs/absent",
+          "success": true,
+          "response_size": 508902,
+          "timestamp": "2026-01-02T19:16:34.529966",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        }
+      ]
+    },
+    "Helper": {
+      "success": 5,
+      "failed": 0,
+      "endpoints": [
+        {
+          "endpoint": "/data/top/volumes",
+          "name": "Top Total Volume",
+          "category": "Helper",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/top/volumes?tsym=USD",
+          "success": true,
+          "response_size": 3266,
+          "timestamp": "2026-01-02T19:16:36.243603",
+          "response_keys": [
+            "Data",
+            "MetaData",
+            "Type",
+            "Response",
+            "VolSymbol"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/top/volume/tier",
+          "name": "Top Total Top Tier Volume",
+          "category": "Helper",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/top/volume/tier?tsym=USD",
+          "success": true,
+          "response_size": 71,
+          "timestamp": "2026-01-02T19:16:38.042783",
+          "response_keys": [
+            "Response",
+            "Message",
+            "Type",
+            "Data"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/top/mktcap",
+          "name": "Top Market Cap",
+          "category": "Helper",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/top/mktcap?tsym=USD",
+          "success": true,
+          "response_size": 12646,
+          "timestamp": "2026-01-02T19:16:39.788107",
+          "response_keys": [
+            "Message",
+            "Type",
+            "MetaData",
+            "SponsoredData",
+            "Data"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/top/volume/direct",
+          "name": "Top Direct Volume",
+          "category": "Helper",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/top/volume/direct?tsym=USD",
+          "success": true,
+          "response_size": 71,
+          "timestamp": "2026-01-02T19:16:41.618866",
+          "response_keys": [
+            "Response",
+            "Message",
+            "Type",
+            "Data"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/top/price",
+          "name": "Top Price",
+          "category": "Helper",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/top/price?tsym=USD",
+          "success": true,
+          "response_size": 14897,
+          "timestamp": "2026-01-02T19:16:43.345927",
+          "response_keys": [
+            "Message",
+            "Type",
+            "MetaData",
+            "SponsoredData",
+            "Data"
+          ],
+          "response_type": "dict"
+        }
+      ]
+    },
+    "Index": {
+      "success": 6,
+      "failed": 0,
+      "endpoints": [
+        {
+          "endpoint": "/data/index/list",
+          "name": "List of Indices",
+          "category": "Index",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/index/list",
+          "success": true,
+          "response_size": 1570,
+          "timestamp": "2026-01-02T19:16:45.071407",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/index/value",
+          "name": "MVIS Index Value",
+          "category": "Index",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/index/value?tsym=USD&index_id=1",
+          "success": true,
+          "response_size": 145,
+          "timestamp": "2026-01-02T19:16:46.790150",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/index/histo/minute",
+          "name": "MVIS Historical Minute Data",
+          "category": "Index",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/index/histo/minute?limit=10&index_id=1",
+          "success": true,
+          "response_size": 145,
+          "timestamp": "2026-01-02T19:16:48.514877",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/index/histo/hour",
+          "name": "MVIS Historical Hour Data",
+          "category": "Index",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/index/histo/hour?limit=10&index_id=1",
+          "success": true,
+          "response_size": 145,
+          "timestamp": "2026-01-02T19:16:50.228933",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/index/histo/day",
+          "name": "MVIS Historical Day Data",
+          "category": "Index",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/index/histo/day?limit=10&index_id=1",
+          "success": true,
+          "response_size": 145,
+          "timestamp": "2026-01-02T19:16:51.971649",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        },
+        {
+          "endpoint": "/data/index/underlying/list",
+          "name": "List of Underlying Indices",
+          "category": "Index",
+          "status_code": 200,
+          "url": "https://min-api.cryptocompare.com/data/index/underlying/list",
+          "success": true,
+          "response_size": 90,
+          "timestamp": "2026-01-02T19:16:53.708936",
+          "response_keys": [
+            "Response",
+            "Message",
+            "HasWarning",
+            "Type",
+            "RateLimit"
+          ],
+          "response_type": "dict"
+        }
+      ]
+    }
+  },
+  "all_results": [
+    {
+      "endpoint": "/data/price",
+      "name": "Single Symbol Price",
+      "category": "Price",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD&e=CCCAGG",
+      "success": true,
+      "response_size": 16,
+      "timestamp": "2026-01-02T19:15:19.317822",
+      "response_keys": [
+        "USD"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/pricemulti",
+      "name": "Multiple Symbols Price",
+      "category": "Price",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/pricemulti?tsyms=USD&fsyms=BTC,ETH&e=CCCAGG",
+      "success": true,
+      "response_size": 46,
+      "timestamp": "2026-01-02T19:15:21.068303",
+      "response_keys": [
+        "BTC",
+        "ETH"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/pricemultifull",
+      "name": "Multiple Symbols Full Price",
+      "category": "Price",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/pricemultifull?tsyms=USD&fsyms=BTC,ETH&e=CCCAGG",
+      "success": true,
+      "response_size": 5310,
+      "timestamp": "2026-01-02T19:15:22.781161",
+      "response_keys": [
+        "RAW",
+        "DISPLAY"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/generateAvg",
+      "name": "Generate Average",
+      "category": "Price",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/generateAvg?fsym=BTC&tsym=USD&e=CCCAGG",
+      "success": true,
+      "response_size": 1135,
+      "timestamp": "2026-01-02T19:15:24.514810",
+      "response_keys": [
+        "RAW",
+        "DISPLAY"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/histoday",
+      "name": "Daily Historical OHLCV",
+      "category": "Historical",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/histoday?fsym=BTC&tsym=USD&limit=10&e=CCCAGG",
+      "success": true,
+      "response_size": 2176,
+      "timestamp": "2026-01-02T19:15:26.357017",
+      "response_keys": [
+        "Response",
+        "Type",
+        "Aggregated",
+        "TimeTo",
+        "TimeFrom"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/histohour",
+      "name": "Hourly Historical OHLCV",
+      "category": "Historical",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/histohour?fsym=BTC&tsym=USD&limit=10&e=CCCAGG",
+      "success": true,
+      "response_size": 2139,
+      "timestamp": "2026-01-02T19:15:28.071220",
+      "response_keys": [
+        "Response",
+        "Type",
+        "Aggregated",
+        "TimeTo",
+        "TimeFrom"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/histominute",
+      "name": "Minute Historical OHLCV",
+      "category": "Historical",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/histominute?fsym=BTC&tsym=USD&limit=10&e=CCCAGG",
+      "success": true,
+      "response_size": 2095,
+      "timestamp": "2026-01-02T19:15:29.786063",
+      "response_keys": [
+        "Response",
+        "Type",
+        "Aggregated",
+        "TimeTo",
+        "TimeFrom"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/dayAvg",
+      "name": "Daily Market Close",
+      "category": "Historical",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/dayAvg?fsym=BTC&tsym=USD&e=CCCAGG",
+      "success": true,
+      "response_size": 73,
+      "timestamp": "2026-01-02T19:15:31.534844",
+      "response_keys": [
+        "USD",
+        "ConversionType"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/dayavg",
+      "name": "Daily Historical Minute",
+      "category": "Historical",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/dayavg?fsym=BTC&tsym=USD",
+      "success": true,
+      "response_size": 71,
+      "timestamp": "2026-01-02T19:15:33.259106",
+      "response_keys": [
+        "Response",
+        "Message",
+        "Type",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/pricehistorical",
+      "name": "Price at Specific Time",
+      "category": "Historical",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/pricehistorical?fsym=BTC&tsyms=USD&e=CCCAGG",
+      "success": true,
+      "response_size": 24,
+      "timestamp": "2026-01-02T19:15:34.980259",
+      "response_keys": [
+        "BTC"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/blockchain/list",
+      "name": "List of Blockchain Coins",
+      "category": "Blockchain",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/blockchain/list",
+      "success": true,
+      "response_size": 146,
+      "timestamp": "2026-01-02T19:15:36.717804",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/blockchain/latest",
+      "name": "Latest Blockchain Data",
+      "category": "Blockchain",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/blockchain/latest?fsym=BTC",
+      "success": true,
+      "response_size": 146,
+      "timestamp": "2026-01-02T19:15:38.428108",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/blockchain/histo/day",
+      "name": "Daily Blockchain Historical Data",
+      "category": "Blockchain",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/blockchain/histo/day?fsym=BTC&limit=10",
+      "success": true,
+      "response_size": 146,
+      "timestamp": "2026-01-02T19:15:40.175479",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/blockchain/distribution/latest",
+      "name": "Balance Distribution Latest",
+      "category": "Blockchain",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/blockchain/distribution/latest?fsym=BTC",
+      "success": true,
+      "response_size": 71,
+      "timestamp": "2026-01-02T19:15:41.901727",
+      "response_keys": [
+        "Response",
+        "Message",
+        "Type",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/blockchain/distribution/day",
+      "name": "Balance Distribution Daily",
+      "category": "Blockchain",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/blockchain/distribution/day?fsym=BTC&limit=10",
+      "success": true,
+      "response_size": 71,
+      "timestamp": "2026-01-02T19:15:43.627454",
+      "response_keys": [
+        "Response",
+        "Message",
+        "Type",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/blockchain/staking/latest",
+      "name": "Staking Rate Latest",
+      "category": "Blockchain",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/blockchain/staking/latest?fsym=BTC",
+      "success": true,
+      "response_size": 146,
+      "timestamp": "2026-01-02T19:15:45.365095",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/tradingsignals/intotheblock/latest",
+      "name": "IntoTheBlock Trading Signals Latest",
+      "category": "TradingSignals",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/tradingsignals/intotheblock/latest?fsym=BTC",
+      "success": true,
+      "response_size": 842,
+      "timestamp": "2026-01-02T19:15:47.072112",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/pair/mapping/fsym",
+      "name": "Pair Mapping by From Symbol",
+      "category": "PairMapping",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/pair/mapping/fsym?fsym=BTC",
+      "success": true,
+      "response_size": 146,
+      "timestamp": "2026-01-02T19:15:48.804439",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/pair/mapping/exchange",
+      "name": "Pair Mapping by Exchange",
+      "category": "PairMapping",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/pair/mapping/exchange?e=CCCAGG",
+      "success": true,
+      "response_size": 158,
+      "timestamp": "2026-01-02T19:15:50.538138",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/pair/mapping/fsym/exchange",
+      "name": "Pair Mapping by Symbol and Exchange",
+      "category": "PairMapping",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/pair/mapping/fsym/exchange?fsym=BTC&e=CCCAGG",
+      "success": true,
+      "response_size": 71,
+      "timestamp": "2026-01-02T19:15:52.251778",
+      "response_keys": [
+        "Response",
+        "Message",
+        "Type",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/pair/remapping/planned",
+      "name": "Planned Pair Remapping",
+      "category": "PairMapping",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/pair/remapping/planned",
+      "success": true,
+      "response_size": 71,
+      "timestamp": "2026-01-02T19:15:53.958024",
+      "response_keys": [
+        "Response",
+        "Message",
+        "Type",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/top/totalvolumefull",
+      "name": "Top by Total Volume Full Data",
+      "category": "Toplists",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/top/totalvolumefull?tsym=USD&limit=10",
+      "success": true,
+      "response_size": 71,
+      "timestamp": "2026-01-02T19:15:55.675454",
+      "response_keys": [
+        "Response",
+        "Message",
+        "Type",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/top/totalvolume/tier",
+      "name": "Top by Total Top Tier Volume Full",
+      "category": "Toplists",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/top/totalvolume/tier?tsym=USD&limit=10",
+      "success": true,
+      "response_size": 71,
+      "timestamp": "2026-01-02T19:15:58.421799",
+      "response_keys": [
+        "Response",
+        "Message",
+        "Type",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/top/mktcapfull",
+      "name": "Top by Market Cap Full Data",
+      "category": "Toplists",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/top/mktcapfull?tsym=USD&limit=10",
+      "success": true,
+      "response_size": 31061,
+      "timestamp": "2026-01-02T19:16:00.172898",
+      "response_keys": [
+        "Message",
+        "Type",
+        "MetaData",
+        "SponsoredData",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/top/exchanges",
+      "name": "Top Exchanges by Pair",
+      "category": "Toplists",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/top/exchanges?fsym=BTC&tsym=USD&limit=10",
+      "success": true,
+      "response_size": 2113,
+      "timestamp": "2026-01-02T19:16:01.945253",
+      "response_keys": [
+        "Response",
+        "Data",
+        "RateLimit",
+        "HasWarning",
+        "Type"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/top/exchanges/full",
+      "name": "Top Exchanges Full Data",
+      "category": "Toplists",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/top/exchanges/full?fsym=BTC&tsym=USD&limit=10",
+      "success": true,
+      "response_size": 9248,
+      "timestamp": "2026-01-02T19:16:03.685234",
+      "response_keys": [
+        "Response",
+        "Message",
+        "Data",
+        "RateLimit",
+        "HasWarning"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/social/coin/latest",
+      "name": "Latest Coin Social Stats",
+      "category": "Social",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/social/coin/latest?coinId=1",
+      "success": true,
+      "response_size": 146,
+      "timestamp": "2026-01-02T19:16:05.423584",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/social/coin/histo/day",
+      "name": "Historical Daily Social Stats",
+      "category": "Social",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/social/coin/histo/day?limit=10&coinId=1",
+      "success": true,
+      "response_size": 146,
+      "timestamp": "2026-01-02T19:16:07.141461",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/social/coin/histo/hour",
+      "name": "Historical Hourly Social Stats",
+      "category": "Social",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/social/coin/histo/hour?limit=10&coinId=1",
+      "success": true,
+      "response_size": 146,
+      "timestamp": "2026-01-02T19:16:09.528621",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/v2/news",
+      "name": "Latest News Articles",
+      "category": "News",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/v2/news?limit=10",
+      "success": true,
+      "response_size": 71,
+      "timestamp": "2026-01-02T19:16:11.263270",
+      "response_keys": [
+        "Response",
+        "Message",
+        "Type",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/news/feeds",
+      "name": "List News Feeds",
+      "category": "News",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/news/feeds",
+      "success": true,
+      "response_size": 13087,
+      "timestamp": "2026-01-02T19:16:13.350899",
+      "response_type": "list",
+      "list_length": 106
+    },
+    {
+      "endpoint": "/data/news/categories",
+      "name": "News Article Categories",
+      "category": "News",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/news/categories",
+      "success": true,
+      "response_size": 24611,
+      "timestamp": "2026-01-02T19:16:15.111406",
+      "response_type": "list",
+      "list_length": 187
+    },
+    {
+      "endpoint": "/data/news/feedsandcategories",
+      "name": "News Feeds and Categories",
+      "category": "News",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/news/feedsandcategories",
+      "success": true,
+      "response_size": 37810,
+      "timestamp": "2026-01-02T19:16:16.861195",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/ob/exchanges",
+      "name": "Exchanges with Order Book Data",
+      "category": "OrderBook",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/ob/exchanges",
+      "success": true,
+      "response_size": 146,
+      "timestamp": "2026-01-02T19:16:18.580523",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/ob/l1/top",
+      "name": "Order Book Level 1 Top",
+      "category": "OrderBook",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/ob/l1/top?fsym=BTC&tsym=USD&e=CCCAGG",
+      "success": true,
+      "response_size": 146,
+      "timestamp": "2026-01-02T19:16:20.302838",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/ob/l2/snapshot",
+      "name": "Order Book Level 2 Snapshot",
+      "category": "OrderBook",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/ob/l2/snapshot?fsym=BTC&tsym=USD&e=CCCAGG",
+      "success": true,
+      "response_size": 146,
+      "timestamp": "2026-01-02T19:16:22.719268",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/all/exchanges",
+      "name": "All Exchanges",
+      "category": "GeneralInfo",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/all/exchanges",
+      "success": true,
+      "response_size": 505857,
+      "timestamp": "2026-01-02T19:16:24.949957",
+      "response_keys": [
+        "aax",
+        "ABCC",
+        "ACX",
+        "AidosMarket",
+        "alphaex"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/all/coinlist",
+      "name": "All Included Exchanges",
+      "category": "GeneralInfo",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/all/coinlist",
+      "success": true,
+      "response_size": 15118910,
+      "timestamp": "2026-01-02T19:16:28.026970",
+      "response_keys": [
+        "Response",
+        "Message",
+        "Data",
+        "RateLimit",
+        "HasWarning"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/cccagg/pairs",
+      "name": "CCCAGG Pairs and Exchanges",
+      "category": "GeneralInfo",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/cccagg/pairs",
+      "success": true,
+      "response_size": 498531,
+      "timestamp": "2026-01-02T19:16:30.224453",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/cccagg/pairs/excluded",
+      "name": "CCCAGG Pairs Excluded",
+      "category": "GeneralInfo",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/cccagg/pairs/excluded",
+      "success": true,
+      "response_size": 1091913,
+      "timestamp": "2026-01-02T19:16:32.466158",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/cccagg/pairs/absent",
+      "name": "CCCAGG Pairs Absent",
+      "category": "GeneralInfo",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/cccagg/pairs/absent",
+      "success": true,
+      "response_size": 508902,
+      "timestamp": "2026-01-02T19:16:34.529966",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/top/volumes",
+      "name": "Top Total Volume",
+      "category": "Helper",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/top/volumes?tsym=USD",
+      "success": true,
+      "response_size": 3266,
+      "timestamp": "2026-01-02T19:16:36.243603",
+      "response_keys": [
+        "Data",
+        "MetaData",
+        "Type",
+        "Response",
+        "VolSymbol"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/top/volume/tier",
+      "name": "Top Total Top Tier Volume",
+      "category": "Helper",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/top/volume/tier?tsym=USD",
+      "success": true,
+      "response_size": 71,
+      "timestamp": "2026-01-02T19:16:38.042783",
+      "response_keys": [
+        "Response",
+        "Message",
+        "Type",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/top/mktcap",
+      "name": "Top Market Cap",
+      "category": "Helper",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/top/mktcap?tsym=USD",
+      "success": true,
+      "response_size": 12646,
+      "timestamp": "2026-01-02T19:16:39.788107",
+      "response_keys": [
+        "Message",
+        "Type",
+        "MetaData",
+        "SponsoredData",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/top/volume/direct",
+      "name": "Top Direct Volume",
+      "category": "Helper",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/top/volume/direct?tsym=USD",
+      "success": true,
+      "response_size": 71,
+      "timestamp": "2026-01-02T19:16:41.618866",
+      "response_keys": [
+        "Response",
+        "Message",
+        "Type",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/top/price",
+      "name": "Top Price",
+      "category": "Helper",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/top/price?tsym=USD",
+      "success": true,
+      "response_size": 14897,
+      "timestamp": "2026-01-02T19:16:43.345927",
+      "response_keys": [
+        "Message",
+        "Type",
+        "MetaData",
+        "SponsoredData",
+        "Data"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/index/list",
+      "name": "List of Indices",
+      "category": "Index",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/index/list",
+      "success": true,
+      "response_size": 1570,
+      "timestamp": "2026-01-02T19:16:45.071407",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/index/value",
+      "name": "MVIS Index Value",
+      "category": "Index",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/index/value?tsym=USD&index_id=1",
+      "success": true,
+      "response_size": 145,
+      "timestamp": "2026-01-02T19:16:46.790150",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/index/histo/minute",
+      "name": "MVIS Historical Minute Data",
+      "category": "Index",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/index/histo/minute?limit=10&index_id=1",
+      "success": true,
+      "response_size": 145,
+      "timestamp": "2026-01-02T19:16:48.514877",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/index/histo/hour",
+      "name": "MVIS Historical Hour Data",
+      "category": "Index",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/index/histo/hour?limit=10&index_id=1",
+      "success": true,
+      "response_size": 145,
+      "timestamp": "2026-01-02T19:16:50.228933",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/index/histo/day",
+      "name": "MVIS Historical Day Data",
+      "category": "Index",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/index/histo/day?limit=10&index_id=1",
+      "success": true,
+      "response_size": 145,
+      "timestamp": "2026-01-02T19:16:51.971649",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    },
+    {
+      "endpoint": "/data/index/underlying/list",
+      "name": "List of Underlying Indices",
+      "category": "Index",
+      "status_code": 200,
+      "url": "https://min-api.cryptocompare.com/data/index/underlying/list",
+      "success": true,
+      "response_size": 90,
+      "timestamp": "2026-01-02T19:16:53.708936",
+      "response_keys": [
+        "Response",
+        "Message",
+        "HasWarning",
+        "Type",
+        "RateLimit"
+      ],
+      "response_type": "dict"
+    }
+  ]
+}
