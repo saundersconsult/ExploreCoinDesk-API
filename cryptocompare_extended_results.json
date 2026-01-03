@@ -1,0 +1,596 @@
+{
+  "summary": {
+    "total": 41,
+    "working": 14,
+    "auth_required": 11,
+    "path_not_found": 16,
+    "param_required": 0,
+    "api_errors": 0,
+    "other_errors": 0
+  },
+  "categories": {
+    "working": [
+      "/data/v2/news/",
+      "/data/news/feeds",
+      "/data/news/feedsandcategories",
+      "/data/news/categories",
+      "/data/top/pairs",
+      "/data/top/exchanges/full",
+      "/data/top/volumes",
+      "/data/all/coinlist",
+      "/data/all/exchanges",
+      "/data/coin/generalinfo",
+      "/data/pricehistorical",
+      "/data/exchange/histoday",
+      "/data/exchange/histohour",
+      "/data/pair/mapping/exchange"
+    ],
+    "api_error": [],
+    "auth_required": [
+      "/data/blockchain/histo/day",
+      "/data/blockchain/list",
+      "/data/blockchain/latest",
+      "/data/social/coin/histo/day",
+      "/data/social/coin/histo/hour",
+      "/data/social/coin/latest",
+      "/data/v2/pair/mapping/exchange",
+      "/data/v2/pair/mapping/fsym",
+      "/data/mining/pools/general",
+      "/data/ob/l1/top",
+      "/data/ob/l2/snapshot"
+    ],
+    "path_not_found": [
+      "/data/blockchain/histo/hour",
+      "/data/social/stats/latest",
+      "/data/blockchain/available_coins",
+      "/data/coin/snapshot",
+      "/data/coin/snapshotfullbyid",
+      "/data/coinaverage",
+      "/data/generateavg",
+      "/data/mining/pools/coins",
+      "/data/mining/equipment",
+      "/data/mining/contracts",
+      "/data/stats/rate/limit",
+      "/data/stats/rate/hour/limit",
+      "/data/trading/pairs",
+      "/data/v2/histo/day",
+      "/data/v2/histo/hour",
+      "/data/v2/histo/minute"
+    ],
+    "param_required": [],
+    "other_error": []
+  },
+  "results": {
+    "/data/blockchain/histo/day": {
+      "description": "Historical blockchain stats (daily)",
+      "params": {
+        "fsym": "BTC",
+        "limit": 10
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "You need a valid auth key or api key to access this endpoint",
+        "response_preview": "{'Response': 'Error', 'Message': 'You need a valid auth key or api key to access this endpoint', 'HasWarning': False, 'Type': 1, 'RateLimit': {}, 'Data': {}}"
+      }
+    },
+    "/data/blockchain/histo/hour": {
+      "description": "Historical blockchain stats (hourly)",
+      "params": {
+        "fsym": "BTC",
+        "limit": 10
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/blockchain/list": {
+      "description": "List of available blockchain data",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "You need a valid auth key or api key to access this endpoint",
+        "response_preview": "{'Response': 'Error', 'Message': 'You need a valid auth key or api key to access this endpoint', 'HasWarning': False, 'Type': 1, 'RateLimit': {}, 'Data': {}}"
+      }
+    },
+    "/data/blockchain/latest": {
+      "description": "Latest blockchain data",
+      "params": {
+        "fsym": "BTC"
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "You need a valid auth key or api key to access this endpoint",
+        "response_preview": "{'Response': 'Error', 'Message': 'You need a valid auth key or api key to access this endpoint', 'HasWarning': False, 'Type': 1, 'RateLimit': {}, 'Data': {}}"
+      }
+    },
+    "/data/social/coin/histo/day": {
+      "description": "Historical social stats (daily)",
+      "params": {
+        "coinId": "1182",
+        "limit": 10
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "You need a valid auth key or api key to access this endpoint",
+        "response_preview": "{'Response': 'Error', 'Message': 'You need a valid auth key or api key to access this endpoint', 'HasWarning': False, 'Type': 1, 'RateLimit': {}, 'Data': {}}"
+      }
+    },
+    "/data/social/coin/histo/hour": {
+      "description": "Historical social stats (hourly)",
+      "params": {
+        "coinId": "1182",
+        "limit": 10
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "You need a valid auth key or api key to access this endpoint",
+        "response_preview": "{'Response': 'Error', 'Message': 'You need a valid auth key or api key to access this endpoint', 'HasWarning': False, 'Type': 1, 'RateLimit': {}, 'Data': {}}"
+      }
+    },
+    "/data/social/coin/latest": {
+      "description": "Latest social stats",
+      "params": {
+        "coinId": "1182"
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "You need a valid auth key or api key to access this endpoint",
+        "response_preview": "{'Response': 'Error', 'Message': 'You need a valid auth key or api key to access this endpoint', 'HasWarning': False, 'Type': 1, 'RateLimit': {}, 'Data': {}}"
+      }
+    },
+    "/data/social/stats/latest": {
+      "description": "Latest social statistics",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/v2/news/": {
+      "description": "Crypto news feed (v2)",
+      "params": {
+        "lang": "EN"
+      },
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "{'Type': 100, 'Message': 'News list successfully returned', 'Promoted': [], 'Data': [{'id': '56752091', 'guid': 'https://timestabloid.com/?p=93891', 'published_on': 1767406556, 'imageurl': 'https://re"
+      }
+    },
+    "/data/news/feeds": {
+      "description": "Available news feeds",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "[{'key': 'coindesk', 'name': 'CoinDesk', 'img': 'https://resources.cryptocompare.com/news/5/default.png', 'lang': 'EN'}, {'key': 'coindesk_es', 'name': 'CoinDesk', 'img': 'https://resources.cryptocomp"
+      }
+    },
+    "/data/news/feedsandcategories": {
+      "description": "News feeds and categories",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "{'Response': 'Success', 'Message': '', 'HasWarning': False, 'Type': 100, 'RateLimit': {}, 'Data': {'Categories': [{'categoryName': '1INCH', 'wordsAssociatedWithCategory': ['1INCH'], 'includedPhrases':"
+      }
+    },
+    "/data/news/categories": {
+      "description": "News categories",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "[{'categoryName': '1INCH', 'wordsAssociatedWithCategory': ['1INCH'], 'includedPhrases': ['1INCH NETWORK']}, {'categoryName': 'AAVE', 'wordsAssociatedWithCategory': ['AAVE'], 'includedPhrases': ['AAVE "
+      }
+    },
+    "/data/top/pairs": {
+      "description": "Top trading pairs",
+      "params": {
+        "fsym": "BTC",
+        "limit": 10
+      },
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "{'Response': 'Success', 'Data': [{'exchange': 'CCCAGG', 'fromSymbol': 'BTC', 'toSymbol': 'USDC', 'volume24h': 14586.5342737851, 'volume24hTo': 1307780826.93636, 'price': 90143.3002266813, 'lastUpdateT"
+      }
+    },
+    "/data/top/exchanges/full": {
+      "description": "Full exchange data",
+      "params": {
+        "fsym": "BTC",
+        "tsym": "USD",
+        "limit": 10
+      },
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "{'Response': 'Success', 'Message': 'Total available exchanges - 62', 'Data': {'CoinInfo': {'Id': '1182', 'Name': 'BTC', 'FullName': 'Bitcoin', 'Internal': 'BTC', 'ImageUrl': '/media/37746251/btc.png',"
+      }
+    },
+    "/data/top/volumes": {
+      "description": "Top volumes by pair",
+      "params": {
+        "tsym": "USD",
+        "limit": 10
+      },
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "{'Data': [{'SYMBOL': 'BTC', 'SUPPLY': 19970743, 'MKTCAPPENALTY': 0, 'FULLNAME': 'Bitcoin (BTC)', 'NAME': 'Bitcoin', 'ID': '1182', 'VOLUME24HOURTO': 2816235300.6899996}, {'SYMBOL': 'ETH', 'SUPPLY': 120"
+      }
+    },
+    "/data/v2/pair/mapping/exchange": {
+      "description": "Exchange pair mapping",
+      "params": {
+        "e": "Coinbase"
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "You need a valid auth key or api key to access this endpoint",
+        "response_preview": "{'Response': 'Error', 'Message': 'You need a valid auth key or api key to access this endpoint', 'HasWarning': False, 'Type': 1, 'RateLimit': {}, 'Data': {}}"
+      }
+    },
+    "/data/v2/pair/mapping/fsym": {
+      "description": "From symbol pair mapping",
+      "params": {
+        "fsym": "BTC"
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "You need a valid auth key or api key to access this endpoint",
+        "response_preview": "{'Response': 'Error', 'Message': 'You need a valid auth key or api key to access this endpoint', 'HasWarning': False, 'Type': 1, 'RateLimit': {}, 'Data': {}}"
+      }
+    },
+    "/data/all/coinlist": {
+      "description": "All available coins",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "{'Response': 'Success', 'Message': 'Coin list succesfully returned!', 'Data': {'1': {'Id': '972038', 'Url': '/coins/1/overview', 'ImageUrl': '/media/45958414/1.png', 'ContentCreatedOn': 1745333984, 'N"
+      }
+    },
+    "/data/all/exchanges": {
+      "description": "All exchanges and trading pairs",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "{'aax': {}, 'ABCC': {}, 'ACX': {}, 'AidosMarket': {}, 'alphaex': {}, 'archax': {}, 'ascendex': {'1': ['USDT'], '4': ['USDT'], 'DESCI': ['USDT'], 'GOAT': ['USDT'], 'DOGEGOV': ['USDT'], 'MAHA': ['USDT']"
+      }
+    },
+    "/data/blockchain/available_coins": {
+      "description": "Available blockchain coins",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/coin/generalinfo": {
+      "description": "General coin information",
+      "params": {
+        "fsyms": "BTC,ETH",
+        "tsym": "USD"
+      },
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "{'Message': 'Success', 'Type': 100, 'Data': [{'CoinInfo': {'Id': '1182', 'Name': 'BTC', 'FullName': 'Bitcoin', 'Internal': 'BTC', 'ImageUrl': '/media/37746251/btc.png', 'Url': '/coins/btc/overview', '"
+      }
+    },
+    "/data/coin/snapshot": {
+      "description": "Coin snapshot",
+      "params": {
+        "fsym": "BTC",
+        "tsym": "USD"
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/coin/snapshotfullbyid": {
+      "description": "Full coin snapshot by ID",
+      "params": {
+        "id": "1182"
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/pricehistorical": {
+      "description": "Historical price at specific time",
+      "params": {
+        "fsym": "BTC",
+        "tsyms": "USD",
+        "ts": "1609459200"
+      },
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "{'BTC': {'USD': 29388.94}}"
+      }
+    },
+    "/data/coinaverage": {
+      "description": "Coin average price",
+      "params": {
+        "fsym": "BTC",
+        "tsym": "USD",
+        "e": "Coinbase"
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/generateavg": {
+      "description": "Generate weighted average",
+      "params": {
+        "fsym": "BTC",
+        "tsym": "USD",
+        "e": "Coinbase"
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/exchange/histoday": {
+      "description": "Exchange historical daily volume",
+      "params": {
+        "tsym": "USD",
+        "limit": 10
+      },
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "{'Type': 100, 'Message': 'Got the data', 'Data': [{'time': 1766534400, 'volume': 23995491851.79}, {'time': 1766620800, 'volume': 17855441231.12}, {'time': 1766707200, 'volume': 28131907125.93}, {'time"
+      }
+    },
+    "/data/exchange/histohour": {
+      "description": "Exchange historical hourly volume",
+      "params": {
+        "tsym": "USD",
+        "limit": 10
+      },
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "{'Type': 100, 'Message': 'Got the data', 'Data': [{'time': 1767369600, 'volume': 4159801130.48}, {'time': 1767373200, 'volume': 3108412772.82}, {'time': 1767376800, 'volume': 2177907069.64}, {'time': "
+      }
+    },
+    "/data/mining/pools/general": {
+      "description": "General mining pools data",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "You need a valid auth key or api key to access this endpoint",
+        "response_preview": "{'Response': 'Error', 'Message': 'You need a valid auth key or api key to access this endpoint', 'HasWarning': False, 'Type': 1, 'RateLimit': {}, 'Data': {}}"
+      }
+    },
+    "/data/mining/pools/coins": {
+      "description": "Mining pools by coin",
+      "params": {
+        "fsym": "BTC"
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/mining/equipment": {
+      "description": "Mining equipment data",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/mining/contracts": {
+      "description": "Mining contracts data",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/stats/rate/limit": {
+      "description": "Rate limit status",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/stats/rate/hour/limit": {
+      "description": "Hourly rate limit",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/pair/mapping/exchange": {
+      "description": "Pair mapping by exchange",
+      "params": {
+        "e": "Coinbase"
+      },
+      "result": {
+        "status_code": 200,
+        "success": true,
+        "error": null,
+        "error_type": null,
+        "response_preview": "{'Response': 'Success', 'Message': '', 'HasWarning': False, 'Type': 100, 'RateLimit': {}, 'Data': [{'exchange': 'Coinbase', 'fsym': 'GALA', 'tsym': 'USD', 'exchange_fsym': 'GALA', 'exchange_tsym': 'US"
+      }
+    },
+    "/data/trading/pairs": {
+      "description": "Trading pairs",
+      "params": null,
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/ob/l1/top": {
+      "description": "Level 1 order book top",
+      "params": {
+        "fsyms": "BTC",
+        "tsyms": "USD"
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "You need a valid auth key or api key to access this endpoint",
+        "response_preview": "{'Response': 'Error', 'Message': 'You need a valid auth key or api key to access this endpoint', 'HasWarning': False, 'Type': 1, 'RateLimit': {}, 'Data': {}}"
+      }
+    },
+    "/data/ob/l2/snapshot": {
+      "description": "Level 2 order book snapshot",
+      "params": {
+        "fsym": "BTC",
+        "tsym": "USD"
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "You need a valid auth key or api key to access this endpoint",
+        "response_preview": "{'Response': 'Error', 'Message': 'You need a valid auth key or api key to access this endpoint', 'HasWarning': False, 'Type': 1, 'RateLimit': {}, 'Data': {}}"
+      }
+    },
+    "/data/v2/histo/day": {
+      "description": "Alternative historical daily (v2)",
+      "params": {
+        "fsym": "BTC",
+        "tsym": "USD",
+        "limit": 10
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/v2/histo/hour": {
+      "description": "Alternative historical hourly (v2)",
+      "params": {
+        "fsym": "BTC",
+        "tsym": "USD",
+        "limit": 10
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    },
+    "/data/v2/histo/minute": {
+      "description": "Alternative historical minute (v2)",
+      "params": {
+        "fsym": "BTC",
+        "tsym": "USD",
+        "limit": 10
+      },
+      "result": {
+        "status_code": 200,
+        "success": false,
+        "error_type": "api_error",
+        "error": "Path does not exist",
+        "response_preview": "{'Response': 'Error', 'Message': 'Path does not exist', 'Type': 0, 'Data': {}}"
+      }
+    }
+  }
+}
