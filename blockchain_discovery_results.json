@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-01-02T18:28:15.534678",
-  "api_key_used": false,
+  "timestamp": "2026-01-02T18:34:56.063650",
+  "api_key_used": true,
   "summary": {
     "total": 23,
     "working_with_auth": 23,
-    "working_no_auth": 0,
+    "working_no_auth": 23,
     "auth_required": 0,
     "path_not_found": 0,
     "param_errors": 0,
@@ -36,7 +36,31 @@
       "/data/blockchain/supply/total",
       "/data/blockchain/distribution"
     ],
-    "working_no_auth": [],
+    "working_no_auth": [
+      "/data/blockchain/histo/day",
+      "/data/blockchain/histo/hour",
+      "/data/blockchain/histo/minute",
+      "/data/blockchain/latest",
+      "/data/blockchain/list",
+      "/data/blockchain/available_coins",
+      "/data/blockchain/coins",
+      "/data/blockchain/mining/calculator",
+      "/data/blockchain/mining/stats",
+      "/data/blockchain/block/latest",
+      "/data/blockchain/block/height",
+      "/data/blockchain/block/hash",
+      "/data/blockchain/tx/latest",
+      "/data/blockchain/mempool",
+      "/data/blockchain/stats",
+      "/data/blockchain/stats/latest",
+      "/data/blockchain/difficulty",
+      "/data/blockchain/hashrate",
+      "/data/blockchain/address/balance",
+      "/data/blockchain/address/transactions",
+      "/data/blockchain/supply",
+      "/data/blockchain/supply/total",
+      "/data/blockchain/distribution"
+    ],
     "auth_required": [],
     "path_not_found": [],
     "param_errors": [],
@@ -50,6 +74,29 @@
         "limit": 10
       },
       "with_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Success",
+        "message": "",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {
+          "Aggregated": "bool",
+          "TimeFrom": "int",
+          "TimeTo": "int",
+          "Data": "list"
+        },
+        "fields": [
+          "Response",
+          "Message",
+          "HasWarning",
+          "Type",
+          "RateLimit",
+          "Data"
+        ],
+        "error": null
+      },
+      "without_auth": {
         "status_code": 200,
         "success": true,
         "response_type": "Error",
@@ -66,8 +113,7 @@
           "Data"
         ],
         "error": null
-      },
-      "without_auth": null
+      }
     },
     "/data/blockchain/histo/hour": {
       "description": "Hourly historical blockchain statistics",
@@ -91,7 +137,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/histo/minute": {
       "description": "Minute historical blockchain statistics",
@@ -115,7 +176,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/latest": {
       "description": "Latest blockchain data for a coin",
@@ -125,11 +201,17 @@
       "with_auth": {
         "status_code": 200,
         "success": true,
-        "response_type": "Error",
-        "message": "You need a valid auth key or api key to access this endpoint",
+        "response_type": "Success",
+        "message": "",
         "has_data": true,
         "data_type": "dict",
-        "sample_data": {},
+        "sample_data": {
+          "id": "int",
+          "time": "int",
+          "symbol": "str",
+          "partner_symbol": "str",
+          "zero_balance_addresses_all_time": "int"
+        },
         "fields": [
           "Response",
           "Message",
@@ -140,12 +222,7 @@
         ],
         "error": null
       },
-      "without_auth": null
-    },
-    "/data/blockchain/list": {
-      "description": "List all available blockchain data coins",
-      "params": null,
-      "with_auth": {
+      "without_auth": {
         "status_code": 200,
         "success": true,
         "response_type": "Error",
@@ -162,8 +239,53 @@
           "Data"
         ],
         "error": null
+      }
+    },
+    "/data/blockchain/list": {
+      "description": "List all available blockchain data coins",
+      "params": null,
+      "with_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Success",
+        "message": "",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {
+          "0XBTC": "dict",
+          "1ST": "dict",
+          "1WO": "dict",
+          "AAC": "dict",
+          "ABCC": "dict"
+        },
+        "fields": [
+          "Response",
+          "Message",
+          "HasWarning",
+          "Type",
+          "RateLimit",
+          "Data"
+        ],
+        "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "You need a valid auth key or api key to access this endpoint",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "HasWarning",
+          "Type",
+          "RateLimit",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/available_coins": {
       "description": "Get available blockchain coins",
@@ -184,7 +306,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/coins": {
       "description": "List of coins with blockchain data",
@@ -205,7 +342,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/mining/calculator": {
       "description": "Mining profitability calculator",
@@ -232,7 +384,25 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "tsyms is a required param.",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "HasWarning",
+          "Type",
+          "RateLimit",
+          "Data",
+          "ParamWithError"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/mining/stats": {
       "description": "Mining statistics",
@@ -255,7 +425,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/block/latest": {
       "description": "Latest block information",
@@ -278,7 +463,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/block/height": {
       "description": "Block by height",
@@ -302,7 +502,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/block/hash": {
       "description": "Block by hash",
@@ -326,7 +541,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/tx/latest": {
       "description": "Latest transactions",
@@ -350,7 +580,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/mempool": {
       "description": "Mempool statistics",
@@ -373,7 +618,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/stats": {
       "description": "General blockchain statistics",
@@ -396,7 +656,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/stats/latest": {
       "description": "Latest blockchain stats",
@@ -419,7 +694,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/difficulty": {
       "description": "Mining difficulty data",
@@ -442,7 +732,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/hashrate": {
       "description": "Network hashrate data",
@@ -465,7 +770,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/address/balance": {
       "description": "Address balance lookup",
@@ -489,7 +809,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/address/transactions": {
       "description": "Address transaction history",
@@ -514,7 +849,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/supply": {
       "description": "Circulating supply data",
@@ -537,7 +887,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/supply/total": {
       "description": "Total supply",
@@ -560,7 +925,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     },
     "/data/blockchain/distribution": {
       "description": "Wealth distribution",
@@ -583,7 +963,22 @@
         ],
         "error": null
       },
-      "without_auth": null
+      "without_auth": {
+        "status_code": 200,
+        "success": true,
+        "response_type": "Error",
+        "message": "Path does not exist",
+        "has_data": true,
+        "data_type": "dict",
+        "sample_data": {},
+        "fields": [
+          "Response",
+          "Message",
+          "Type",
+          "Data"
+        ],
+        "error": null
+      }
     }
   }
 }

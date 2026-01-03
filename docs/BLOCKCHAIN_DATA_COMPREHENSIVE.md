@@ -1,10 +1,10 @@
 # CryptoCompare MinAPI - Comprehensive Blockchain Data Documentation
 
-**Discovery Date**: 2026-01-02 18:28:15
+**Discovery Date**: 2026-01-02 18:34:56
 
 **Base URL**: `https://min-api.cryptocompare.com`
 
-**API Key Required**: Not configured - limited access
+**API Key Required**: Yes (configured)
 
 ---
 
@@ -12,7 +12,7 @@
 
 - **Total Endpoints Tested**: 23
 - **Working with Auth**: 23
-- **Working without Auth**: 0
+- **Working without Auth**: 23
 - **Auth Required**: 0
 - **Not Available**: 0
 
@@ -30,7 +30,17 @@
 
 **Response Fields**: `Response`, `Message`, `HasWarning`, `Type`, `RateLimit`, `Data`
 
-🔒 **Requires authentication**
+**Sample Data Structure**:
+```json
+{
+  "Aggregated": "bool",
+  "TimeFrom": "int",
+  "TimeTo": "int",
+  "Data": "list"
+}
+```
+
+✓ **Works without authentication**
 
 ---
 
@@ -44,7 +54,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -58,7 +68,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -72,7 +82,18 @@
 
 **Response Fields**: `Response`, `Message`, `HasWarning`, `Type`, `RateLimit`, `Data`
 
-🔒 **Requires authentication**
+**Sample Data Structure**:
+```json
+{
+  "id": "int",
+  "time": "int",
+  "symbol": "str",
+  "partner_symbol": "str",
+  "zero_balance_addresses_all_time": "int"
+}
+```
+
+✓ **Works without authentication**
 
 ---
 
@@ -86,7 +107,18 @@
 
 **Response Fields**: `Response`, `Message`, `HasWarning`, `Type`, `RateLimit`, `Data`
 
-🔒 **Requires authentication**
+**Sample Data Structure**:
+```json
+{
+  "0XBTC": "dict",
+  "1ST": "dict",
+  "1WO": "dict",
+  "AAC": "dict",
+  "ABCC": "dict"
+}
+```
+
+✓ **Works without authentication**
 
 ---
 
@@ -100,7 +132,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -114,7 +146,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -128,7 +160,7 @@
 
 **Response Fields**: `Response`, `Message`, `HasWarning`, `Type`, `RateLimit`, `Data`, `ParamWithError`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -142,7 +174,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -156,7 +188,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -170,7 +202,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -184,7 +216,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -198,7 +230,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -212,7 +244,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -226,7 +258,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -240,7 +272,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -254,7 +286,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -268,7 +300,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -282,7 +314,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -296,7 +328,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -310,7 +342,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -324,7 +356,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
@@ -338,7 +370,7 @@
 
 **Response Fields**: `Response`, `Message`, `Type`, `Data`
 
-🔒 **Requires authentication**
+✓ **Works without authentication**
 
 ---
 
