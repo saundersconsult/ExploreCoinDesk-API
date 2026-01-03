@@ -1,0 +1,210 @@
+================================================================================
+TRADING PAIRS SUMMARY
+Generated: 2026-01-02 21:11:11
+================================================================================
+
+Total Base Symbols: 5511
+Total Trading Pairs: 12243
+Total Unique Markets: 93
+
+================================================================================
+AVAILABLE MARKETS
+================================================================================
+  - BTCMarkets
+  - BTCTurk
+  - Bibox
+  - BigONE
+  - Binance
+  - Bit2C
+  - BitBank
+  - BitMart
+  - BitTrex
+  - Bitfinex
+  - Bitforex
+  - Bithumb
+  - Bitkub
+  - Bitmex
+  - Bitso
+  - Bitstamp
+  - Cexio
+  - CoinEx
+  - CoinJar
+  - CoinTiger
+  - Coinbase
+  - Coincheck
+  - Coinmate
+  - Coinone
+  - Coinsbit
+  - DigiFinex
+  - Exmo
+  - Gateio
+  - Gemini
+  - Graviex
+  - HitBTC
+  - HuobiPro
+  - IndependentReserve
+  - Korbit
+  - Kraken
+  - Kucoin
+  - Kuna
+  - LAToken
+  - LBank
+  - Luno
+  - Lykke
+  - MercadoBitcoin
+  - NDAX
+  - OKEX
+  - P2PB2B
+  - Poloniex
+  - Upbit
+  - Yobit
+  - Zaif
+  - ascendex
+  - backpack
+  - bequant
+  - bilaxy
+  - binanceusa
+  - bingx
+  - bit
+  - bit2me
+  - bitFlyer
+  - bitci
+  - bitget
+  - bithumbglobal
+  - bitopro
+  - bitpanda
+  - bitrue
+  - bitunix
+  - bitvavo
+  - bkex
+  - btse
+  - bullish
+  - bybit
+  - coindcx
+  - coinfield
+  - coinspro
+  - coinw
+  - cryptodotcom
+  - cube
+  - deribit
+  - figuremarkets
+  - garantex
+  - gopax
+  - hashkey
+  - huobijapan
+  - indodax
+  - lmax
+  - mercatox
+  - mexc
+  - phemex
+  - probit
+  - safetrade
+  - toobit
+  - valr
+  - whitebit
+  - xtpub
+
+================================================================================
+SAMPLE TRADING PAIRS (First 20)
+================================================================================
+
+
+00:
+  → USD: 1 market(s) - Coinbase
+  → USDT: 1 market(s) - Gateio
+  → USDC: 1 market(s) - Kucoin
+
+0DOG:
+  → USDT: 1 market(s) - Gateio
+
+0G:
+  → USDC: 3 market(s) - backpack, mexc, Binance
+  → USDT: 5 market(s) - bitget, bybit, Gateio, whitebit, Binance
+  → KRW: 2 market(s) - Bithumb, Upbit
+  → EUR: 2 market(s) - bitvavo, Kraken
+  → USD: 2 market(s) - Cexio, Kraken
+  → BTC: 1 market(s) - Upbit
+  → BNB: 1 market(s) - Binance
+  → FDUSD: 1 market(s) - Binance
+  → TRY: 1 market(s) - Binance
+
+0X0:
+  → USDT: 1 market(s) - CoinEx
+
+0XBTC:
+  → USD: 1 market(s) - Yobit
+
+0XDEV:
+  → USDT: 1 market(s) - BitMart
+
+1:
+  → USDT: 3 market(s) - CoinEx, Gateio, mexc
+  → USDC: 1 market(s) - mexc
+
+1000SATS:
+  → USDT: 2 market(s) - bit, Binance
+  → USDC: 1 market(s) - Binance
+  → TRY: 1 market(s) - Binance
+  → FDUSD: 1 market(s) - Binance
+
+10SET:
+  → USDT: 1 market(s) - Gateio
+
+1ART:
+  → USDT: 1 market(s) - Gateio
+
+1CAT:
+  → ETH: 1 market(s) - bilaxy
+  → USDT: 1 market(s) - Gateio
+
+1EARTH:
+  → USDT: 2 market(s) - Gateio, LAToken
+
+1EX:
+  → USDT: 1 market(s) - mexc
+
+1INCH:
+  → USDT: 7 market(s) - bitget, bybit, cryptodotcom, Gateio, OKEX ... and 2 more
+  → KRW: 3 market(s) - Bithumb, Korbit, Upbit
+  → THB: 1 market(s) - Bitkub
+  → EUR: 3 market(s) - bitvavo, Coinbase, Kraken
+  → GBP: 1 market(s) - Coinbase
+  → USD: 3 market(s) - Coinbase, cryptodotcom, Kraken
+  → USDC: 2 market(s) - CoinJar, Binance
+  → AUD: 1 market(s) - CoinJar
+  → ETH: 1 market(s) - Gateio
+  → BRL: 1 market(s) - MercadoBitcoin
+  → BTC: 3 market(s) - Upbit, whitebit, Binance
+  → UAH: 1 market(s) - whitebit
+
+1SOL:
+  → USDT: 1 market(s) - bybit
+
+2BACCO:
+  → ETH: 1 market(s) - Yobit
+  → DOGE: 1 market(s) - Yobit
+  → USD: 1 market(s) - Yobit
+
+2KEY:
+  → USDT: 1 market(s) - bithumbglobal
+
+2MOON:
+  → USDT: 1 market(s) - mexc
+
+2Z:
+  → USDC: 3 market(s) - backpack, bybit, Binance
+  → USDT: 6 market(s) - bitget, bybit, Gateio, OKEX, whitebit ... and 1 more
+  → THB: 1 market(s) - Bitkub
+  → EUR: 2 market(s) - bitvavo, Kraken
+  → USD: 3 market(s) - Coinbase, cryptodotcom, Kraken
+  → KRW: 2 market(s) - Coinone, Upbit
+  → BTC: 1 market(s) - Upbit
+  → TRY: 1 market(s) - Binance
+  → FDUSD: 1 market(s) - Binance
+  → BNB: 1 market(s) - Binance
+
+32BIT:
+  → ETH: 1 market(s) - Yobit
+  → USD: 1 market(s) - Yobit
+
+... and 5491 more base symbols
