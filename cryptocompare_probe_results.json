@@ -1,0 +1,296 @@
+{
+  "/price": {
+    "description": "GET current price",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"USD\":90136.23,\"EUR\":76916.64}"
+    },
+    "params": {
+      "fsym": "BTC",
+      "tsyms": "USD,EUR"
+    }
+  },
+  "/pricemulti": {
+    "description": "GET multiple prices at once",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"BTC\":{\"USD\":90136.23},\"ETH\":{\"USD\":3128.58}}"
+    },
+    "params": {
+      "fsyms": "BTC,ETH",
+      "tsyms": "USD"
+    }
+  },
+  "/pricemultifull": {
+    "description": "GET detailed price info",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"RAW\":{\"BTC\":{\"USD\":{\"TYPE\":\"5\",\"MARKET\":\"CCCAGG\",\"FROMSYMBOL\":\"BTC\",\"TOSYMBOL\":\"USD\",\"FLAGS\":\"1\",\"LASTMARKET\":\"CCCAGG\",\"MEDIAN\":90136.2336316844,\"TOPTIERVOLUME24HOUR\":31547.62877803,\"TOPTIERVOLUME24"
+    },
+    "params": {
+      "fsyms": "BTC,ETH",
+      "tsyms": "USD"
+    }
+  },
+  "/generateAvg": {
+    "description": "GET weighted average price",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"fsym is a required param.\",\"HasWarning\":false,\"Type\":2,\"RateLimit\":{},\"Data\":{},\"ParamWithError\":\"fsym\"}"
+    },
+    "params": null
+  },
+  "/dayAvg": {
+    "description": "GET daily average price",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"fsym is a required param.\",\"HasWarning\":false,\"Type\":2,\"RateLimit\":{},\"Data\":{},\"ParamWithError\":\"fsym\"}"
+    },
+    "params": null
+  },
+  "/histoday": {
+    "description": "GET daily historical data",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Success\",\"Type\":100,\"Aggregated\":false,\"TimeTo\":1767398400,\"TimeFrom\":1766534400,\"FirstValueInArray\":true,\"ConversionType\":{\"type\":\"direct\",\"conversionSymbol\":\"\"},\"Data\":[{\"time\":17665344"
+    },
+    "params": {
+      "fsym": "BTC",
+      "tsym": "USD",
+      "limit": 10
+    }
+  },
+  "/histohour": {
+    "description": "GET hourly historical data",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Success\",\"Type\":100,\"Aggregated\":false,\"TimeTo\":1767402000,\"TimeFrom\":1767366000,\"FirstValueInArray\":true,\"ConversionType\":{\"type\":\"direct\",\"conversionSymbol\":\"\"},\"Data\":[{\"time\":17673660"
+    },
+    "params": {
+      "fsym": "BTC",
+      "tsym": "USD",
+      "limit": 10
+    }
+  },
+  "/histominute": {
+    "description": "GET minute historical data",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Success\",\"Type\":100,\"Aggregated\":false,\"TimeTo\":1767404580,\"TimeFrom\":1767403980,\"FirstValueInArray\":true,\"ConversionType\":{\"type\":\"direct\",\"conversionSymbol\":\"\"},\"Data\":[{\"time\":17674039"
+    },
+    "params": {
+      "fsym": "BTC",
+      "tsym": "USD",
+      "limit": 10
+    }
+  },
+  "/top/mktcapfull": {
+    "description": "GET top coins by market cap",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Message\":\"Success\",\"Type\":100,\"MetaData\":{\"Count\":601},\"SponsoredData\":[],\"Data\":[{\"CoinInfo\":{\"Id\":\"1182\",\"Name\":\"BTC\",\"FullName\":\"Bitcoin\",\"Internal\":\"BTC\",\"ImageUrl\":\"/media/37746251/btc.png\",\"Ur"
+    },
+    "params": {
+      "tsym": "USD",
+      "limit": 5
+    }
+  },
+  "/top/mktcap": {
+    "description": "GET top coins by market cap (simple)",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"tsym is a required param.\",\"HasWarning\":false,\"Type\":2,\"RateLimit\":{},\"Data\":{},\"ParamWithError\":\"tsym\"}"
+    },
+    "params": null
+  },
+  "/top/totalvolfull": {
+    "description": "GET top coins by volume",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"tsym is a required param.\",\"HasWarning\":false,\"Type\":2,\"RateLimit\":{},\"Data\":{},\"ParamWithError\":\"tsym\"}"
+    },
+    "params": null
+  },
+  "/top/totalvol": {
+    "description": "GET top coins by volume (simple)",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"tsym is a required param.\",\"HasWarning\":false,\"Type\":2,\"RateLimit\":{},\"Data\":{},\"ParamWithError\":\"tsym\"}"
+    },
+    "params": null
+  },
+  "/top/exchanges": {
+    "description": "GET top exchanges",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"fsym is a required param.\",\"HasWarning\":false,\"Type\":2,\"RateLimit\":{},\"Data\":{},\"ParamWithError\":\"fsym\"}"
+    },
+    "params": null
+  },
+  "/news": {
+    "description": "GET crypto news",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/social": {
+    "description": "GET social stats",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/mining/pools": {
+    "description": "GET mining pools",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/mining/equipment": {
+    "description": "GET mining equipment",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/mining/contracts": {
+    "description": "GET mining contracts",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/blockchain/latest": {
+    "description": "GET latest blockchain data",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"You need a valid auth key or api key to access this endpoint\",\"HasWarning\":false,\"Type\":1,\"RateLimit\":{},\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/rate": {
+    "description": "GET exchange rates",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/ratelimit": {
+    "description": "GET rate limit status",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/sentiment": {
+    "description": "GET market sentiment",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/pairs": {
+    "description": "GET available trading pairs",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/tradingpairs": {
+    "description": "GET trading pairs",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/exchanges": {
+    "description": "GET all exchanges",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/cryptocurrencies": {
+    "description": "GET all cryptocurrencies",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  },
+  "/categories": {
+    "description": "GET coin categories",
+    "result": {
+      "status_code": 200,
+      "success": true,
+      "error": null,
+      "response_preview": "{\"Response\":\"Error\",\"Message\":\"Path does not exist\",\"Type\":0,\"Data\":{}}"
+    },
+    "params": null
+  }
+}
