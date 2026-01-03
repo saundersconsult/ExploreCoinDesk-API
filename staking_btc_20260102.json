@@ -1,0 +1,9 @@
+{
+  "Response": "Error",
+  "Message": "fsym param with value: BTC is invalid. (fsym allowed values: ETH)",
+  "HasWarning": false,
+  "Type": 2,
+  "RateLimit": {},
+  "Data": {},
+  "ParamWithError": "fsym"
+}
