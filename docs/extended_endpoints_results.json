@@ -1,0 +1,310 @@
+[
+  {
+    "name": "Spot Minute Historical",
+    "path": "/spot/v1/historical/minutes",
+    "params": {
+      "market": "coinbase",
+      "instrument": "BTC-USD",
+      "limit": 10
+    },
+    "status": 200,
+    "success": true,
+    "count": 10,
+    "sample_fields": [
+      "UNIT",
+      "TIMESTAMP",
+      "TYPE",
+      "MARKET",
+      "INSTRUMENT",
+      "MAPPED_INSTRUMENT",
+      "BASE",
+      "QUOTE",
+      "BASE_ID",
+      "QUOTE_ID"
+    ]
+  },
+  {
+    "name": "Spot Week Historical",
+    "path": "/spot/v1/historical/weeks",
+    "params": {
+      "market": "coinbase",
+      "instrument": "BTC-USD",
+      "limit": 10
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Spot Month Historical",
+    "path": "/spot/v1/historical/months",
+    "params": {
+      "market": "coinbase",
+      "instrument": "BTC-USD",
+      "limit": 10
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Futures Minute Historical",
+    "path": "/futures/v1/historical/minutes",
+    "params": {
+      "market": "binance",
+      "instrument": "BTCUSDT",
+      "limit": 10
+    },
+    "status": 200,
+    "success": true,
+    "count": 10,
+    "sample_fields": [
+      "UNIT",
+      "TIMESTAMP",
+      "TYPE",
+      "MARKET",
+      "INSTRUMENT",
+      "MAPPED_INSTRUMENT",
+      "INDEX_UNDERLYING",
+      "QUOTE_CURRENCY",
+      "SETTLEMENT_CURRENCY",
+      "CONTRACT_CURRENCY"
+    ]
+  },
+  {
+    "name": "Futures Week Historical",
+    "path": "/futures/v1/historical/weeks",
+    "params": {
+      "market": "binance",
+      "instrument": "BTCUSDT",
+      "limit": 10
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Futures Funding Rates",
+    "path": "/futures/v1/funding/rates",
+    "params": {
+      "market": "binance",
+      "instrument": "BTCUSDT"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Futures Open Interest",
+    "path": "/futures/v1/openinterest",
+    "params": {
+      "market": "binance",
+      "instrument": "BTCUSDT"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Futures Open Interest Historical",
+    "path": "/futures/v1/historical/openinterest",
+    "params": {
+      "market": "binance",
+      "instrument": "BTCUSDT",
+      "limit": 10
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Index Latest All",
+    "path": "/index/cc/v1/latest/all",
+    "params": {},
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Index Constituents",
+    "path": "/index/cc/v1/constituents",
+    "params": {
+      "instrument": "BTC-USD"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Index Methodology",
+    "path": "/index/cc/v1/methodology",
+    "params": {
+      "instrument": "BTC-USD"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Options Historical Hours",
+    "path": "/options/v1/historical/hours",
+    "params": {
+      "market": "deribit",
+      "instrument": "BTC-25JAN26-100000-C",
+      "limit": 10
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Options Greeks",
+    "path": "/options/v1/greeks",
+    "params": {
+      "market": "deribit",
+      "instrument": "BTC-25JAN26-100000-C"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Options Volatility",
+    "path": "/options/v1/volatility",
+    "params": {
+      "market": "deribit",
+      "asset": "BTC"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Perpetuals Markets",
+    "path": "/perpetuals/v1/markets",
+    "params": {},
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Perpetuals Instruments",
+    "path": "/perpetuals/v1/markets/instruments",
+    "params": {
+      "market": "binance"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Perpetuals Historical Hours",
+    "path": "/perpetuals/v1/historical/hours",
+    "params": {
+      "market": "binance",
+      "instrument": "BTCUSDT",
+      "limit": 10
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Perpetuals Funding",
+    "path": "/perpetuals/v1/funding",
+    "params": {
+      "market": "binance",
+      "instrument": "BTCUSDT"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Spot Orderbook",
+    "path": "/spot/v1/orderbook/snapshot",
+    "params": {
+      "market": "coinbase",
+      "instrument": "BTC-USD"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Futures Orderbook",
+    "path": "/futures/v1/orderbook/snapshot",
+    "params": {
+      "market": "binance",
+      "instrument": "BTCUSDT"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Orderbook Historical",
+    "path": "/spot/v1/historical/orderbook",
+    "params": {
+      "market": "coinbase",
+      "instrument": "BTC-USD",
+      "limit": 10
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Spot Trades",
+    "path": "/spot/v1/trades",
+    "params": {
+      "market": "coinbase",
+      "instrument": "BTC-USD",
+      "limit": 10
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Futures Trades",
+    "path": "/futures/v1/trades",
+    "params": {
+      "market": "binance",
+      "instrument": "BTCUSDT",
+      "limit": 10
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Spot Aggregated Tick",
+    "path": "/spot/v1/latest/aggregated",
+    "params": {
+      "instrument": "BTC-USD"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Futures Aggregated Tick",
+    "path": "/futures/v1/latest/aggregated",
+    "params": {
+      "instrument": "BTC-USD"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "API Version",
+    "path": "/version",
+    "params": {},
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "API Info",
+    "path": "/info",
+    "params": {},
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Spot Exchange Status",
+    "path": "/spot/v1/exchange/status",
+    "params": {
+      "market": "coinbase"
+    },
+    "status": 404,
+    "success": false
+  },
+  {
+    "name": "Futures Exchange Status",
+    "path": "/futures/v1/exchange/status",
+    "params": {
+      "market": "binance"
+    },
+    "status": 404,
+    "success": false
+  }
+]
