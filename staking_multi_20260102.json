@@ -1,0 +1,51 @@
+{
+  "ETH": {
+    "Response": "Success",
+    "Message": "",
+    "HasWarning": false,
+    "Type": 100,
+    "RateLimit": {},
+    "Data": {
+      "rate": 2.3306,
+      "issued_ts": 1767351600,
+      "issued_date": "2026-01-02T11:00:00Z",
+      "notes": []
+    }
+  },
+  "BTC": {
+    "Response": "Error",
+    "Message": "fsym param with value: BTC is invalid. (fsym allowed values: ETH)",
+    "HasWarning": false,
+    "Type": 2,
+    "RateLimit": {},
+    "Data": {},
+    "ParamWithError": "fsym"
+  },
+  "ADA": {
+    "Response": "Error",
+    "Message": "fsym param with value: ADA is invalid. (fsym allowed values: ETH)",
+    "HasWarning": false,
+    "Type": 2,
+    "RateLimit": {},
+    "Data": {},
+    "ParamWithError": "fsym"
+  },
+  "DOT": {
+    "Response": "Error",
+    "Message": "fsym param with value: DOT is invalid. (fsym allowed values: ETH)",
+    "HasWarning": false,
+    "Type": 2,
+    "RateLimit": {},
+    "Data": {},
+    "ParamWithError": "fsym"
+  },
+  "SOL": {
+    "Response": "Error",
+    "Message": "fsym param with value: SOL is invalid. (fsym allowed values: ETH)",
+    "HasWarning": false,
+    "Type": 2,
+    "RateLimit": {},
+    "Data": {},
+    "ParamWithError": "fsym"
+  }
+}

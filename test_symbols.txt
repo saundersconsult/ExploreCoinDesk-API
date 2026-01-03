@@ -1,0 +1,5 @@
+ETH
+BTC
+ADA
+DOT
+SOL

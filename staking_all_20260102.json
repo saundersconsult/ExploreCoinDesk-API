@@ -1,0 +1,13 @@
+{
+  "Response": "Success",
+  "Message": "",
+  "HasWarning": false,
+  "Type": 100,
+  "RateLimit": {},
+  "Data": {
+    "rate": 2.3306,
+    "issued_ts": 1767351600,
+    "issued_date": "2026-01-02T11:00:00Z",
+    "notes": []
+  }
+}
