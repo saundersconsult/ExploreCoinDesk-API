@@ -1,0 +1,6 @@
+# Bitcoin (BTC)
+1182
+# Ethereum (ETH)
+7605
+# Cardano (ADA)
+5038

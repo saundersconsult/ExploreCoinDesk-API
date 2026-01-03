@@ -1,0 +1,97 @@
+{
+  "Response": "Success",
+  "Message": "",
+  "HasWarning": false,
+  "Type": 100,
+  "RateLimit": {},
+  "Data": {
+    "General": {
+      "Points": 22742668,
+      "Name": "BTC",
+      "CoinName": "Bitcoin",
+      "Type": "Webpagecoinp"
+    },
+    "CryptoCompare": {
+      "Points": 13689540,
+      "SimilarItems": [],
+      "Comments": 651489,
+      "Posts": 173941,
+      "Followers": 113045,
+      "PageViewsSplit": {
+        "Overview": 43797041,
+        "Markets": 1783443,
+        "Analysis": 1419855,
+        "Charts": 12381746,
+        "Trades": 938920,
+        "Orderbook": 139743,
+        "Forum": 13211968,
+        "Influence": 73986,
+        "News": 493252,
+        "Timeline": 72801
+      },
+      "PageViews": 74312755,
+      "CryptopianFollowers": []
+    },
+    "Twitter": {
+      "Points": 846149,
+      "followers": 8231389,
+      "following": 0,
+      "lists": 22982,
+      "favourites": 0,
+      "statuses": 29751,
+      "name": "-",
+      "account_creation": "1313643968",
+      "link": "-"
+    },
+    "Reddit": {
+      "Points": 8026208,
+      "subscribers": 8014031,
+      "active_users": 0,
+      "posts_per_hour": 5.87,
+      "posts_per_day": 140.99,
+      "comments_per_hour": 253.7,
+      "comments_per_day": 6088.79,
+      "link": "-",
+      "name": "-",
+      "community_creation": "1284042626"
+    },
+    "Facebook": {
+      "Points": 0
+    },
+    "CodeRepository": {
+      "List": [
+        {
+          "source": {
+            "Name": "",
+            "Url": "",
+            "InternalId": -1,
+            "InternalData": {}
+          },
+          "parent": {
+            "Name": "",
+            "Url": "",
+            "InternalId": -1,
+            "InternalData": {}
+          },
+          "stars": 85575,
+          "forks": 37812,
+          "subscribers": 4047,
+          "contributors": 1259,
+          "closed_issues": 0,
+          "size": 293790,
+          "open_pull_issues": 22672,
+          "fork": false,
+          "closed_pull_issues": 22672,
+          "created_at": "1292771803",
+          "last_update": "1758300840",
+          "closed_total_issues": 0,
+          "open_total_issues": 802,
+          "last_push": "1758300830",
+          "open_issues": 802,
+          "url": "-"
+        }
+      ],
+      "Points": 173340
+    }
+  }
+}
