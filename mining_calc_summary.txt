@@ -1,0 +1,43 @@
+================================================================================
+MINING CALCULATOR SUMMARY
+Generated: 2026-01-02 21:33:07
+================================================================================
+
+Total Symbols: 3
+Target Currencies: USD, EUR
+
+Sample (first 5):
+--------------------------------------------------------------------------------
+
+BTC: Bitcoin
+  Block Height: 930665
+  Block Time (s): 361
+  Block Reward: 3.125
+  Hashrate: 1.04046589013965e+21
+  Total Coins Mined: 19970806
+  Max Supply: 20999999.9769
+  Launch Date: 2009-01-03
+  Price USD: 89996.62
+  Price EUR: 76810
+
+ETH: Ethereum
+  Block Height: 24151952
+  Block Time (s): 12
+  Block Reward: 2.044338104121828
+  Hashrate: 0
+  Total Coins Mined: 120694878.114886
+  Max Supply: -1
+  Launch Date: 2015-07-30
+  Price USD: 3109.98
+  Price EUR: 2653.16
+
+XMR: Monero
+  Block Height: 3579470
+  Block Time (s): 120
+  Block Reward: 0.63186062
+  Hashrate: 6333307983
+  Total Coins Mined: 18694864.7147661
+  Max Supply: -1
+  Launch Date: 2014-04-18
+  Price USD: 432.4
+  Price EUR: 368.91

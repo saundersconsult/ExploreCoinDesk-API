@@ -1,0 +1,4 @@
+symbol,full_name,block_height,block_time_seconds,block_reward,net_hashes_per_second,total_coins_mined,max_supply,asset_launch_date,price_USD
+BTC,Bitcoin,930665,361,3.125,1.04046589013965e+21,19970806,20999999.9769,2009-01-03,89991.35
+ETH,Ethereum,24151952,12,2.044338104121828,0,120694878.114886,-1,2015-07-30,3109.79
+XMR,Monero,3579470,120,0.63186062,6333307983,18694864.7147661,-1,2014-04-18,432.4
